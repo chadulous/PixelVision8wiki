@@ -1,5 +1,5 @@
 # Tabel Of Contents* [Introduction](About)
-* [Pixel Vision 8](Main)
+* [Pixel Vision 8](Home)
 * [Change Log](ChangeLog)
 * [Rendering To The Display](Rendering_About)
     * [Configuring the Screen](Rendering_ConfiguringTheScreen)
