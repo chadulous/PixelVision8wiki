@@ -1,4 +1,5 @@
-# Tabel Of Contents* [Introduction](README)
+# Tabel Of Contents
+* [Introduction](README)
 * [Pixel Vision 8](WhatIsPixelVision8)
 * [Change Log](ChangeLog)
 * [Building Pixel Vision 8](Build_README)
