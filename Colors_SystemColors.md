@@ -1,0 +1,5 @@
+# System Colors
+
+The default game template included a `colors.png` file. This file represents all of the colors available at runtime and contains one color per pixel. The Pixel Vision 8 reads through each color and loads it into the `ColorChip` when a game is loaded into memory. These colors represent the available system colors and their corresponding IDs in memory. If no `color.png` file is provided, Pixel Vision 8’s default color palette will be used.
+
+
