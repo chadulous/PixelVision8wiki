@@ -1,7 +1,7 @@
 # Tabel Of Contents* [Introduction](README)
 * [Pixel Vision 8](WhatIsPixelVision8)
 * [Change Log](ChangeLog)
-* [Buildilng Pixel Vision 8](Build_README)
+* [Building Pixel Vision 8](Build_README)
     * [Cloning From Github](Build_CloningFromGithub)
     * [Runners](Build_Runners)
     * [MonoGame Runners](Build_MonoGameRunners)
