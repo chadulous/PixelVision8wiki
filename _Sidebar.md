@@ -6,6 +6,7 @@
     * [Runners](Build_Runners)
     * [MonoGame Runners](Build_MonoGameRunners)
     * [Pixel Vision 8 Runners](Build_PixelVision8Runners)
+    * [Making C# Games](Build_MakingCSharpGames)
 * [Pixel Vision Engine](Engine_README)
     * [The Game Chip](Engine_GameChip)
     * [Game Runner](Engine_GameRunner)
