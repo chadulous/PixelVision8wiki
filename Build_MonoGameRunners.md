@@ -20,7 +20,7 @@ From here you can start the build and you will end up with the following game.
 
 For the C# Runner, you can modify the game by making changes in the `ExampleGameChip.cs` file. If you are looking to build a pure C# Pixel Vision 8 game, you’ll want to start with this project.
 
-If you have an existing PV8 game that was written in Lua, or you want to create a bare-bones Lua game directly on top of C#, you can use the LuaRunner project. This is set up similar to the C# Runner with a Program.cs file, a Content directory, but this project uses the Pixel Vision 8’s LuaRunner which is located in the Shared/PixelVision8.Lua/ project folder.
+If you have an existing PV8 game that was written in Lua, or you want to create a bare-bones Lua game directly on top of C#, you can use the LuaRunner project. This is set up similar to the C# Runner with a Program.cs file, a Content directory, but this project uses the Pixel Vision 8’s LuaRunner which is located in the `Shared/PixelVision8.Lua/` project folder.
 
 <p style="text-align:center"><img src="images/MonoGameRunners_image_4.png" /></p>
 
@@ -28,15 +28,19 @@ When you compile the LuaRunner, you’ll see the same empty PV8 project that the
 
 <p style="text-align:center"><img src="images/MonoGameRunners_image_5.png" /></p>
 
-The only difference here is that the code for the project is located in /Contents/code.lua file. If you’d like to compile your own PV8 game written in Lua, simply copy over all of the project files to the root of the Content directory and recompile. Even better, you can continue to make changes to your Lua game without having to recompile by pressing `Ctrl + 4`. Just remember that it will reload the files located in the build’s Contents folder and not the ones located in the solution since they are copied over on each new build.
-
-Finally, it’s important to point out that both projects have dependencies on the MonoGame. 
+The only difference here is that the code for the project is located in `Contents/code.lua` file. If you’d like to compile your own PV8 game written in Lua, simply copy over all of the project files to the root of the Content directory and recompile. Even better, you can continue to make changes to your Lua game without having to recompile by pressing `Ctrl + 4`. Just remember that it will reload the files located in the build’s `Contents` folder and not the ones located in the solution since they are copied over on each new build.
 
 <p style="text-align:center"><img src="images/MonoGameRunners_image_6.png" /></p>
 
-The Lua Runner requires a reference to [MoonSharp](https://www.nuget.org/packages/MoonSharp) which is the Lua Interpritore Pixel Vision 8 uses.
+Any chances you make here will be overwritten if you recompile in Visual Studio so be sure to copy these back over to your projects Contents folder.
+
+Finally, it’s important to point out that both projects have dependencies on MonoGame. 
 
 <p style="text-align:center"><img src="images/MonoGameRunners_image_7.png" /></p>
+
+The Lua Runner requires a reference to [MoonSharp](https://www.nuget.org/packages/MoonSharp) which is the Lua Interpritore Pixel Vision 8 uses.
+
+<p style="text-align:center"><img src="images/MonoGameRunners_image_8.png" /></p>
 
 These NuGet projects are not included in the git repo so you may need to force the project to reimport them or install them by hand.
 

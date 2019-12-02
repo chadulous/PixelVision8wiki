@@ -12,7 +12,7 @@ Finally, for those looking for nightly builds or patches to bugs as they are clo
 
 ![image alt text](images/CloningFromGithub_image_2.png)
 
-The is an up to date list of issues currently being worked on and each issue is tagged to the version they will be fixed. Feel free to log bugs or submit fixes and we’ll figure out how to handle them.
+There is an up-to-date list of issues currently being worked on and each issue is tagged to the version they will be fixed. Feel free to log bugs or submit fixes and we’ll figure out how to handle them.
 
 ![image alt text](images/CloningFromGithub_image_3.png)
 

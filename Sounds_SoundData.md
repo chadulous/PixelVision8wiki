@@ -131,7 +131,7 @@ Pixel Vision 8 sound effects are stored in the `sounds.json` file. This file def
 </table>
 
 
-You can use any Sfxr compatible sound generator to create a compatible 24 parameter string file for each sound effect.
+You can use any Sfxr sound generator to create a compatible 24 parameter string file for each sound effect.
 
 Each sound effect is stored inside of the `SoundChip`’s `sounds` array property. Here is an example of how the file is structured:
 
@@ -150,7 +150,7 @@ Each sound effect is stored inside of the `SoundChip`’s `sounds` array propert
 
 This file will contain the maximum number of sound effects your game can support which is defined in the `data.json` file. You can change this cap by modifying the `totalSounds `property of the `SoundChip`.
 
-Finally, you can configure the sound channels in the data.json file. The SoundChip contains a property called channelType with an array of values that map to each WaveType. 
+Finally, you can configure the sound channels in the data.json file. The `SoundChip` contains a property called `channelType` with an array of values that map to each wave type. 
 
 `"channelTypes": [-1, -1, -1, -1, -1]`
 

@@ -52,9 +52,7 @@ In the documentation, you may see some of the following types. This chart will h
 
 Both C# and Lua support multiple number types. Pixel Vision 8 on the other hand, uses integers internally. That means that in C# you’ll need to pass in integers to any API that accepts a number value. In Lua, you don’t have to convert the type, since the language doesn’t have explicit types. The one thing to keep in mind is that Pixel Vision 8’s APIs will always return integers. While you are welcome to use non-integer values in your game, you’ll want to pay attention to the removal of any fractions when a PV8 API returns a number.
 
-The most common example of this is trying to keep track of an entity’s position. Pixel Vision 8 will for that position to "snap" to the gid since the geometry primitives, Point and Rectangle, use integers. You can track sub-pixel movement outside of Pixel Vision 8’s own data structures, just be sure to convert them to integers before applying them back to the entity’s draw call. You can use math.floor() in Lua or cast the number to int in C#.
-
-The only place where PV8 uses float is in the update’s `timeDelta` argument. Since this is supplied externally by MonoGame, which PV8 runs on top of, it’s the only instance of where a float is used in the SDK.
+The most common example of this is trying to keep track of an entity’s position. Pixel Vision 8 will for that position to "snap" to the gid since the geometry primitives, Point and Rectangle, use integers. You can track sub-pixel movement outside of Pixel Vision 8’s own data structures, just be sure to convert them to integers before applying them back to the entity’s draw call. You can use `math.floor()` in Lua or cast the number to int in C#.
 
 ## Array Index
 
@@ -70,7 +68,7 @@ In C#, an empty value is usually defined as null. In Lua, the equivalent is nil.
 
 Pixel Vision 8’s APIs may contain optional arguments. In C# these may appear with a question mark next to the type. The documentation will mention if an argument is optional or not and what default value it will use when not supplied. In cases where there are multiple optional arguments, you can use null in C# or nil in Lua to have the default value or behavior applied.
 
-Keep in mind that some APIs have different functionality based on if an argument is provided or not. For example, calling Sprite(0) will return the pixel data for the first sprite. If you supply the optional value, an int array, it will update the first sprite’s pixel data and return the new pixel data int array.
+Keep in mind that some APIs have different functionality based on if an argument is provided or not. For example, calling `Sprite(0)` will return the pixel data for the first sprite. If you supply the optional value, an int array, it will update the first sprite’s pixel data and return the new pixel data int array.
 
  
 

@@ -50,10 +50,4 @@ One way to help optimize your sprites is to store them in page blocks before imp
 
 Here you can see how each page of sprites is organized. Since the importer reads from the top left of the `sprite.png` to the right as it traverses each row of pixels, organizing your PNG file like this will help speed-up loading sprites at run-time.
 
-When building a game, don't focus on optimizing your `sprite.png` at first. While you may see slower load times, simply work on your sprites in a way that makes sense to you. Before sharing the game, simply set the optimize sprite flag and let the engine do it for you. Here is an example of how I organize the sprites inside the Reaper Boy game folder:
-
-![image alt text](images/SpriteMemoryPages_image_1.png)
-
-As you can see, I keep two sprite files. The first is the `sprites.original.png` which is ignored by the importer but allows me to still work with sprites in my image editor of choice. For running the game, I use the optimized file as the main `sprite.png`.
-
 

@@ -1,13 +1,38 @@
 # Resolution
 
-The resolution panel is broken up into 3 main groups. The first handles the width and height of the screen. 
+Each game can have its own resolution define which is defined in the game’s `data.json` file. There are 4 properties that help make up a game’s final resolution. These properties have their own minimum and maximum values which help ensure that Pixel Vision 8’s renderer is able to correctly draw to the screen without impacting performance. Here is a list of the `DisplayChip`’s properties and value range.
 
-<p style="text-align:center"><img src="images/Resolution_image_0.png" /></p>
+<table>
+  <tr>
+    <td>DisplayChip Property</td>
+    <td>Minimum Value</td>
+    <td>Maximum Value</td>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td>64</td>
+    <td>512</td>
+  </tr>
+  <tr>
+    <td>height</td>
+    <td>64</td>
+    <td>480</td>
+  </tr>
+  <tr>
+    <td>overscanX</td>
+    <td>0</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>overscanY</td>
+    <td>0</td>
+    <td>4</td>
+  </tr>
+</table>
 
-By default, the Runner’s native resolution is 512 x 480. While you are not limited to this resolution, all games are scaled to fit inside of it. That means if you change the resolution to 160 x 144, which is the resolution of the GBoy template, black bars appear at the top and bottom of your game.
 
-<p style="text-align:center"><img src="images/Resolution_image_1.png" /></p>
+Keep in mind that a game’s resolution will not affect the screen’s resolution. The game is automatically upscaled to fill the screen.
 
-The maximum resolution you can set a game to is 512 x 480. It is also important to note that resolutions higher than 256 x 240 may incur a performance penalty. At its default resolution of 256 x 240 pixels, the display will render 61,440 pixels per frame. Larger resolutions increase this number exponentially and drastically slow down rendering. If you are having issues with a game running on lower-powered systems, it is best to use a smaller resolution. The fewer pixels you attempt to render, the better the performance.
+While it’s possible to have resolutions larger than 256 x 240, there may be a performance penalty. At Pixel Vision 8’s default resolution of 256 x 240 pixels, the display will render 61,440 pixels per frame. Larger resolutions increase this number exponentially and drastically slow down rendering. If you are having issues with a game running on lower-powered systems, it is best to use a smaller resolution. The fewer pixels you attempt to render, the better the performance.
 
 

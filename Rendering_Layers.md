@@ -1,6 +1,6 @@
 # Layers
 
-There is one advanced property that is not exposed in the Chip Editor called layers. You can find this by editing the data.json file directly. By default, Pixel Vision 8 games will have 6 layers.
+The `DisplayChip `has a special `layers `property which helps define the rendering priority of each draw call. You can find this by editing the `data.json` file directly. By default, Pixel Vision 8 games will have six layers.
 
 <table>
   <tr>
@@ -41,14 +41,8 @@ There is one advanced property that is not exposed in the Chip Editor called lay
 </table>
 
 
-You can limit the number of layers to create a more authentic feeling. For example, the original Nintendo only supported the first four layers. The original Game Boy could support the first five layers since it had a special Window layer which you can emulate by using the UI layer.
+You can limit the number of layers to better match other console rendering limitations. For example, the original Nintendo only supported the first four layers. On the other hand, the original Game Boy could support the first five layers since it had a special Window layer which you can emulate by using the UI layer.
 
-If you want to modify the layers property from the Chip Editor, select Edit Data from the dropdown menu.
-
-<p style="text-align:center"><img src="images/Layers_image_0.png" /></p>
-
-Likewise, if you do not have the Pro Tools installed, you can edit the data.json file directly. Changing this value will limit the layers you display on the screen so only modify this if you know what you are doing.
-
-<p style="text-align:center"><img src="images/Layers_image_1.png" /></p>
+By changing the number of layers, you will limit the maximum `DrawMode `value. That means changing the layers property to 4 will ignore any `DrawMode.UI` or `DrawMode.SpriteAbove` requests. You should only change this value if you really want to strictly enforce the layer rendering for a given game. It’s best to just ignore the `DrawModes `you don’t want to use.
 
 
