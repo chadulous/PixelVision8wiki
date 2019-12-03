@@ -1,5 +1,6 @@
-# Tabel Of Contents* [Introduction](README)
-* [Pixel Vision 8](WhatIsPixelVision8)
+# Tabel Of Contents* [Pixel Vision SDK](HomeSDK)
+* [Change Log](ChangeLog)
+* [Pixel Vision OS](HomeOS)
 * [Change Log](ChangeLog)
 * [Building Pixel Vision 8](Build_README)
     * [Cloning From Github](Build_CloningFromGithub)
@@ -9,6 +10,7 @@
     * [Making C# Games](Build_MakingCSharpGames)
 * [Pixel Vision Engine](Engine_README)
     * [The Game Chip](Engine_GameChip)
+    * [GameChip API](Engine_GameChipAPI)
     * [Game Runner](Engine_GameRunner)
     * [DisplayTarget](Engine_DisplayTarget)
 * [Rendering To The Display](Rendering_README)
@@ -31,6 +33,7 @@
     * [System Data](GameData_LoadingGameFiles)
     * [System Limitations](GameData_SystemLimitations)
     * [Property Groups](GameData_PropertyGroups)
+    * [The Bios](GameData_TheBios)
 * [System Colors](Colors_SystemColors)
     * [Importing System Colors](Colors_ImportingSystemColors)
     * [Using Color Offset](Colors_PaletteColorOffset)

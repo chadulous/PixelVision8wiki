@@ -1,45 +1,23 @@
-# What Is Pixel Vision 8
+# Pixel Vision SDK
 
-Pixel Vision 8 is a Fantasy Console that simulates imaginary 8-bit hardware. Out of the box, you can play PV8 games. However, PV8 can also help you create games with limited resolutions, colors, sprites, sound, and memory.
+Pixel Vision 8's core philosophy is to teach retro game development with streamlined workflows. It enables designing games around limited resolutions, colors, sprites, sound, and memory. It is ideal for game jams, prototyping ideas or having fun. You have full control over these limitations. The SDK simply provides a [standard set of APIs](https://docs.google.com/document/d/1-HeQnHR8hp8GC_gudwFoi4-ipwM7TI1MyZ1g86QLZUg/edit#) to create more authentic 8-bit games with modern programming languages and workflows.
 
-![image alt text](images/WhatIsPlay_image_0.png)
+PV8 is also a platform that standardizes 8-bit fantasy console limitations built on top of the open-source [Pixel Vision SDK](http://pixelvisionsdk.com). Developers can customize these restrictions to match actual legacy hardware or create something new. The challenge of working within these confines forces creativity and limits the scope. Pixel Vision 8 creations are expressions of ingenuity that rise above their limitations. 
 
-## Playing Games
+These limitations include:
 
-Pixel Vision 8 supports playing games with keyboard or controllers. Games can also save their progress and are self-contained. You can share PV8 games with your friends that also have a copy of Pixel Vision 8.
+* Memory and game size
 
-<p style="text-align:center"><img src="images/WhatIsPlay_image_1.png" /></p>
+* Color palettes 
 
-## Insert A Disk
+* System colors
 
-Pixel Vision 8 is like a real game console. Just drop any PV8 disk file onto the window and watch it load up! Each disk can contain a single game or a collection of games. You can even have one game load another game inside the same disk to create more significant experiences.
+* Colors per sprite
 
-<p style="text-align:center"><img src="images/WhatIsPlay_image_2.png" /></p>
+* Number of sprites on screen
 
-## Pixel Vision OS
+* Scrolling tilemap
 
-You can turn Pixel Vision 8 into an 8-bit computer with Pixel Vision OS. This open-source operating system offers a desktop, editors, and other tools for creating PV8 games. You can even build a custom operating system for Pixel Vision 8!
-
-<p style="text-align:center"><img src="images/WhatIsPlay_image_3.png" /></p>
-
-# Features
-
-Pixel Vision 8 is a powerful fantasy console with the following features:
-
-* Support for Mac, Windows, and Linux with Xbox, Windows 10, iOS and Android Support coming soon.
-
-* Full controller, keyboard and mouse support.
-
-* Run in scalable window mode or fullscreen.
-
-* Play, Make and Share PV8 games with Pixel Vision OS.
-
-* Customize the hardware limitations for each game.
-
-* Code games in Lua with an easy to learn set of APIs.
-
-* Share your games with others.
-
-Pixel Vision 8: Draw is still in development. Currently, it is offered as "early access" and may contain bugs, unexpectedly crash, or have missing/incomplete features. You'll receive free updates for the life of the project.
+* and more
 
 
