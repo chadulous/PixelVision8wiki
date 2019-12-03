@@ -1,7 +1,5 @@
 # Tabel Of Contents* [Pixel Vision SDK](HomeSDK)
 * [Change Log](ChangeLog)
-* [Pixel Vision OS](HomeOS)
-* [Change Log](ChangeLog)
 * [Building Pixel Vision 8](Build_README)
     * [Cloning From Github](Build_CloningFromGithub)
     * [Runners](Build_Runners)
