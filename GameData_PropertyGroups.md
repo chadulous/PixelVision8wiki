@@ -4,7 +4,9 @@ Pixel Vision 8’s system limitations are defined in the `data.json` file. Each 
 
 <p style="text-align:center"><img src="images/PropertyGroups_image_0.png" /></p>
 
-While there is a bit of overlap between which chips are part of the GPU and storage group, each one focuses on a specific aspect of the engine and how it will perform.
+While there is a bit of overlap between which chips are part of the GPU and storage group, each one focuses on a specific aspect of the engine and how it will perform.\
+
+## Graphics
 
 First up is the graphics group. These are responsible for the visuals of PV8 games. This group is comprised of the following properties:
 
@@ -52,6 +54,8 @@ First up is the graphics group. These are responsible for the visuals of PV8 gam
 </table>
 
 
+## Storage
+
 The second group is the storage. These properties are responsible for how much data can be stored in a PV8 game. This group is comprised of the following properties:
 
 <table>
@@ -88,7 +92,9 @@ The second group is the storage. These properties are responsible for how much d
 </table>
 
 
-The last group is sound. These properties define how sound effects and music work in a PV8 game. This group is comprised of the following properties:
+## Audio
+
+The last group is audio. These properties define how sound effects and music work in a PV8 game. This group is comprised of the following properties:
 
 <table>
   <tr>
@@ -123,6 +129,8 @@ The last group is sound. These properties define how sound effects and music wor
   </tr>
 </table>
 
+
+## Extra Settings
 
 Finally, there are additional properties that are useful for more advanced users. You should only edit these if you know what you are doing.
 

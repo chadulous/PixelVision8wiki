@@ -1,6 +1,6 @@
 # CalculatePosition
 
-Converts an index into an X and Y position to help when working with 1D arrays that represent 2D data.
+Converts an index value into a point with an `X` and `Y` value to help when working with 1D arrays that represent 2D data.
 
 ## Usage
 
@@ -42,5 +42,41 @@ Converts an index into an X and Y position to help when working with 1D arrays t
 
 
 ## Example
+
+In this example, we will treat a 1D as a 2D array and convert an index into a `X`, `Y` position:
+
+    class CalculatePositionExample : GameChip
+    {
+        // A 1D array of example values
+        private string[] exampleGrid =
+        {
+            "A", "B", "C",
+            "D", "E", "F",
+            "G", "H", "I",
+        };
+
+        public override void Init()
+        {
+            var index = 4;
+
+            // Calculate the center index based on a grid with 3 columns
+            var position = CalculatePosition(index, 3);
+
+            // Draw the index and value to the display
+            DrawText("Position "+position.X+","+position.Y+" at Index "+index+" is "+exampleGrid[index], 1, 1, DrawMode.Tile, "large", 15);
+
+        }
+
+        public override void Draw()
+        {
+            // Redraw the display
+            RedrawDisplay();
+        }
+
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/CalculatePositionOutput_image_0.png" /></p>
 
 

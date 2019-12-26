@@ -1,10 +1,10 @@
 # TotalColors
 
-The TotalColors() method simply returns the total number of colors in the ColorChip. By default, it returns only colors that have been set to value other than magenta (#FF00FF) which is the default transparent value used by the engine. By calling TotalColors(false), it returns the total available color slots in the ColorChip.
+The `TotalColors()` API returns the total number of colors in the `ColorChip`. By default, it returns all of the available colors from the ColorChip. By supplying `true `for the `ignoreEmpty `argument, it returns only colors that are not transparent (`#FF00FF`).
 
 ## Usage
 
-TotalColors ( ignoreEmpty )
+`TotalColors ( ignoreEmpty )`
 
 ## Arguments
 
@@ -17,7 +17,7 @@ TotalColors ( ignoreEmpty )
   <tr>
     <td>ignoreEmpty</td>
     <td>bool</td>
-    <td>This is an optional value that defaults to true. When set to true, the ColorChip returns the total number of colors not set to magenta (#FF00FF). Set this value to false if you want to get all of the available color slots in the ColorChip regardless if they are empty or not.</td>
+    <td>This is an optional parameter that defaults to false to get all available colors from the ColorChip or supply true for non-transparent (#FF00FF) colors.</td>
   </tr>
 </table>
 
@@ -35,5 +35,32 @@ TotalColors ( ignoreEmpty )
   </tr>
 </table>
 
+
+## Example
+
+In this example, we are going to display the total color values:
+
+    class TotalColorsExample : GameChip
+    {
+        public override void Init()
+        {
+            // Get total colors values
+            var totalColors = TotalColors();
+            var usedColors = TotalColors(true);
+
+            // Display the used vs total colors on the screen
+            DrawText("Total Colors " + usedColors + "/" + totalColors, 1, 1, DrawMode.Tile, "large", 15);
+        }
+
+        public override void Draw()
+        {
+            // Redraw the display
+            RedrawDisplay();
+        }
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/TotalColorsOutput_image_0.png" /></p>
 
 

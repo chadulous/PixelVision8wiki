@@ -1,10 +1,10 @@
 # TotalSprites
 
-Returns the total number of sprites in the system. You can pass in an optional argument to get a total number of sprites the Sprite Chip can store by passing in false for ignoreEmpty. By default, only sprites with pixel data will be included in the total return.
+The `TotalSprites()` API returns the total number of sprites in the `SpriteChip`. By default, it returns all of the available sprites from the `SpriteChip`. By supplying `true `for the `ignoreEmpty `argument, it returns only sprites that contain pixel data. If all of the values of a sprite’s pixel data are set to `-1`, it will be considered empty by the `SpriteChip`.
 
 ## Usage
 
-`TotalSprites ( bool ignoreEmpty )`
+`TotalSprites ( ignoreEmpty )`
 
 ## Arguments
 
@@ -35,5 +35,33 @@ Returns the total number of sprites in the system. You can pass in an optional a
   </tr>
 </table>
 
+
+## Example
+
+In this example, we are going to display the total sprite values:
+
+    class TotalSpritesExample : GameChip
+    {
+        public override void Init()
+        {
+            // Get total colors values
+            var totalSprites = TotalSprites();
+            var usedSprites = TotalSprites(true);
+
+            // Display the used vs total colors on the screen
+            DrawText("Total Sprites " + usedSprites + "/" + totalSprites, 1, 1, DrawMode.Tile, "large", 15);
+
+        }
+
+        public override void Draw()
+        {
+            // Redraw the display
+            RedrawDisplay();
+        }
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/TotalSpritesOutput_image_0.png" /></p>
 
 

@@ -1,15 +1,54 @@
-# Colors Per Sprite
+# ColorsPerSprite
 
-When the `SpriteChip` imports each sprite, it analyzes the total number of colors and compares this to what the chip can display. An 8 x 8 pixel sprite can have a maximum of 64 unique colors, but older 8-bit systems are unable to display that many colors at once. To simulate this, the `SpriteChip` has a property that represents the total colors per sprite, or CPS for short. While this value can be increased or decreased based on your needs, the reduced number of sprite colors is a hallmark of classic 8-bit systems and their memory limitations which impacted how they draw sprites to the display. 
+Pixel Vision 8 sprites have limits around how many colors they can display at once. This is called **CPS** which stands for Colors Per Sprite. The `ColorsPerSprite()` API returns this value from the `SpriteChip`. Since this value is read-only, it is best to get a reference to it when the game starts up and store it in a variable your game can access
 
-While processing sprites, the importer calculates if each one contains more colors that are allowed. When this happens, additional colors are converted to the default mask color in order to force the sprite to adhere to the CPS limitation. Here is an example of how this works with the four sprites that make up the Reaper Boy character:
+## Usage
 
-<p style="text-align:center"><img src="images/ColorsPerSprite_image_0.png" /></p>
+`ColorsPerSprite ( )`
 
-If we reduce the CPS to 3, you begin losing pixel data:
+## Returns
 
-<p style="text-align:center"><img src="images/ColorsPerSprite_image_1.png" /></p>
+<table>
+  <tr>
+    <td>Value</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>The total colors each sprite can have.</td>
+  </tr>
+</table>
 
-Understanding how CPS works is critical to sprites into your PV8 game.
+
+## Example
+
+In this example, we display the color per sprite value:
+
+    class ColorsPerSpriteExample : GameChip
+    {
+
+        // Store the CPS value
+        private int cps;
+
+        public override void Init()
+        {
+            // Get the colors per sprite value
+            cps = ColorsPerSprite();
+        }
+
+        public override void Draw()
+        {
+            // Clear the display
+            Clear();
+
+            // Draw the cps value to the display
+            DrawText("Colors Per Sprite = " + cps, 8, 8, DrawMode.Sprite, "large", 15);
+
+        }
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/ColorsPerSpriteOutput_image_0.png" /></p>
 
 

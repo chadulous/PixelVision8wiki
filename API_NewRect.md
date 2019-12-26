@@ -1,6 +1,6 @@
 # NewRect
 
-A Rect is a Pixel Vision 8 primitive used for defining the bounds of an object on the display. It contains an x, y, width and height property. The Rect class also has some additional methods to aid with collision detection such as Intersect(rect, rect), IntersectsWidth(rect) and Contains(x,y).
+A `Rectangle `is a Pixel Vision 8 primitive used for defining the bounds of an object on the display. It contains an `X`, `W`, `Width` and `Height` property. The Rectangle object class also has some additional methods to aid with collision detection.
 
 ## Usage
 
@@ -50,5 +50,74 @@ A Rect is a Pixel Vision 8 primitive used for defining the bounds of an object o
   </tr>
 </table>
 
+
+## Collision APIs
+
+The Rectangle has three methods you can use to determine if there is a collision.
+
+<table>
+  <tr>
+    <td>Name</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>Contains( x, y )</td>
+    <td>Test to see if an X and Y position are inside of the Rectangle.</td>
+  </tr>
+  <tr>
+    <td>Contains( point )</td>
+    <td>Test to see if a point is inside of the Rectangle.</td>
+  </tr>
+  <tr>
+    <td>Contains( rectangle )</td>
+    <td>Test to see if another Rectangle intersects with the Rectangle.</td>
+  </tr>
+</table>
+
+
+## Example
+
+In this example, we are going to create two rectangles and test to see if they collide with one another:
+
+    class NewRectExample : GameChip
+    {
+        // Create a rectangle
+            Rectangle rectA = new Rectangle(8, 8, 128, 128);
+
+        // This will store the mouse position
+        private Point mousePos;
+
+        // This will store the collision state
+        private bool collision = false;
+
+        public override void Update(int timeDelta)
+        { 
+            // Get the mouse position
+            mousePos = MousePosition();
+
+            // Test for the collision
+            collision = rectA.Contains(mousePos);
+
+        }
+
+        public override void Draw()
+        { 
+
+            // Redraw the display
+            RedrawDisplay();
+
+            // Draw rectA and change the color if there is a collision
+            DrawRect(rectA.X, rectA.Y, rectA.Width, rectA.Height, collision ? 6 : 5);
+
+            // Draw the mouse cursor on the screen
+            DrawRect(mousePos.X - 1, mousePos.Y - 1, 2, 2, 15);
+
+        }
+
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/NewRectOutput_image_0.png" /></p>
 
 

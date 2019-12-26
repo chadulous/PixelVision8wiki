@@ -1,6 +1,6 @@
 # CalculateIndex
 
-Converts an X and Y position into an index. This is useful for finding positions in 1D arrays that represent 2D data.
+Converts an `X` and `Y` position into an index value. This is useful for finding positions in 1D arrays that represent 2D data.
 
 ## Usage
 
@@ -45,5 +45,43 @@ Converts an X and Y position into an index. This is useful for finding positions
   </tr>
 </table>
 
+
+## Example
+
+In this example, we will treat a 1D as a 2D array and get a value from it based on an `X`, `Y` position:
+
+    class CalculateIndexExample : GameChip
+    {
+        
+        // A 1D array of example values
+        private string[] exampleGrid =
+        {
+            "A", "B", "C",
+            "D", "E", "F",
+            "G", "H", "I",
+        };
+
+        public override void Init()
+        { 
+            // Calculate the center index based on a grid with 3 columns
+            var index = CalculateIndex(1, 1, 3);
+
+            // Draw the index and value to the display
+            DrawText("Position 1,1 is Index " + index + " is " + exampleGrid[index], 1, 1, DrawMode.Tile, "large",
+                15);
+
+        }
+
+        public override void Draw()
+        { 
+            // Redraw the display
+            RedrawDisplay();
+        }
+
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/CalculateIndexOutput_image_0.png" /></p>
 
 

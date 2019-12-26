@@ -1,4 +1,4 @@
-# GameChip API Cheatsheet
+# API Cheatsheet
 
 All Pixel Vision 8 games have access to a set of common set of APIs in C# and Lua. These are exposed via the Game Chip. This bridge allows you to access the native properties and methods of the core framework. Below is a  of the GameChip’s APIs.
 

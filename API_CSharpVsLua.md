@@ -41,9 +41,9 @@ In the documentation, you may see some of the following types. This chart will h
   </tr>
   <tr>
     <td>Rect</td>
+    <td>Rectangle</td>
     <td>Rect</td>
-    <td>Rect</td>
-    <td>Similar to the Point class in Lua, you will need to call CreateRect() to get a new instance. The same API works in C# but you can use new Rect() as well.</td>
+    <td>Similar to the Point class in Lua, you will need to call CreateRect() to get a new instance. The same API works in C# but you can use new Rectangle() as well.</td>
   </tr>
 </table>
 
@@ -69,6 +69,44 @@ In C#, an empty value is usually defined as null. In Lua, the equivalent is nil.
 Pixel Vision 8’s APIs may contain optional arguments. In C# these may appear with a question mark next to the type. The documentation will mention if an argument is optional or not and what default value it will use when not supplied. In cases where there are multiple optional arguments, you can use null in C# or nil in Lua to have the default value or behavior applied.
 
 Keep in mind that some APIs have different functionality based on if an argument is provided or not. For example, calling `Sprite(0)` will return the pixel data for the first sprite. If you supply the optional value, an int array, it will update the first sprite’s pixel data and return the new pixel data int array.
+
+## Quick Changes
+
+Here are a few pointers to help when it comes to porting from Lua to C# or vise verse:
+
+* You can replace `local `in Lua with var in `C#`.
+
+* Replace Lua comments `--` with C# comments are `//`.
+
+* You’ll need to add `;` to end all C# code lines but in Lua there is no need for that.
+
+* Replace Lua string concatenation `..` with `+` in C#.
+
+* Replace Lua comment blocks `--[[ ]] --` with `/** **/` in  C#.
+
+* In most cases, you can replace `function `in Lua with `private void` in C# if the function doesn’t return a value. You’ll want to change any of the lifecycle APIs from `function Init()`  for example to `public override void Init()` in C#.
+
+* Lua tables `=  {}` can be replaced with C# Lists `= new List<TYPE>()` in most cases. Just make sure to add the correct type.
+
+* Replace end in  Lua with `}` in C# and be sure to go back over any function or condition code block and add `{` in C# since Lua doesn’t have this. You can also replace `then `in Lua with `{` in C#.
+
+* Replace for `i = 1, TOTAL do`  in Lua with `for (int i = 0; i < UPPER; i++)` in C#. Remember that data structures in C# are zero-based unlike Lua where they are 1 based.
+
+* Replace Lua `tostring()` with C#’s `.ToString()`.
+
+* Replace Lua `not` with `!` in C#.
+
+* You’ll need to add a few extra lines of code to replace Lua’s `math.random` in C#.  Start by creating a new instance of  `Random random = Random()` at the top of the class. Then replace `math.random` in Lua with `random.Next`.
+
+* Replace `string.char` in Lua with `Convert.ToChar` in C#.
+
+* Replace `math.floor` in Lua with `MathUtil.FloorToInt` in C#.
+
+* Replace `and` in Lua with `&&` in C#
+
+* Replace `or `in Lua with `||` in C#
+
+* Replace `for key, value in next, VALUE` in Lua to `foreach (var keyValuePair in VALUE)` in C#
 
  
 

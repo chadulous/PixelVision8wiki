@@ -1,6 +1,8 @@
 # BackgroundColor
 
-The background color is used to fill the screen when clearing the display. You can use this method to read or update the background color at any point during the `GameChip`'s draw phase. When calling `BackgroundColor()`, without an argument, it returns the current background color as an int. You can pass in an optional int to update the background color by calling `BackgroundColor(0)` where `0` is any valid ID in the `ColorChip`. Passing in a value such as `-1`, or one that is out of range, defaults the background color to magenta (`#ff00ff`) which is the engine's default transparent color.
+The background color is used to fill the screen when clearing the display. You can use this method to read or update the background color at runtime. When calling `BackgroundColor()` without an argument, it returns the current background color as an int. You can pass in an optional int to update the background color by calling `BackgroundColor(0),` where `0` is any valid system color ID. 
+
+Passing in a value such as `-1`, or one that is out of range will default to the first system color unless the ColorChip’s debugColor property is set to true. In debug color mode, any out of bounds color IDs will display Magenta (`#ff00ff`), which is the engine's default transparent color.
 
 ## Usage
 
@@ -38,30 +40,34 @@ The background color is used to fill the screen when clearing the display. You c
 
 ## Example
 
-Calling this without an argiment will simply return the current background color:
+In this example, we will display the default background color on the display, then change it, and redraw the new value below it:
 
-`local bgID = BackgroundColor()`
+    class BackgroundColorExample : GameChip
+    {
+        public override void Init()
+        {
+            //  Get the current background color
+            var defaultColor = BackgroundColor();
+            
+            // Draw the default background color ID to the display
+            DrawText("Default Color " + defaultColor, 1, 1, DrawMode.Tile, "large", 15);
 
-`print("bg color", bgID)`
+            //  Here we are manually changing the background color
+            var newColor = BackgroundColor(2);
 
-This will output the default background color which is set to 0.
+            //  Draw the new color ID to the display
+            DrawText("New Color " + newColor, 1, 3, DrawMode.Tile, "large", 15);
+        }
 
-You can change the background color before calling clear to change the background color of the display.
+        public override void Draw()
+        {
+            //Redraw the display
+            RedrawDisplay();
+        }
+    }
 
-`function Init()`
+Running this code will output the following:
 
-`BackgroundColor(1)`
-
-`end`
-
-`function Draw()`
-
-`Clear()`
-
-`en`d
-
-This will change the background color to #XXXXXX and calling Clear() will repaint the display with the new background color on each frame.
-
-[PIC]
+<p style="text-align:center"><img src="images/BackgroundColorOutput_image_0.png" /></p>
 
 

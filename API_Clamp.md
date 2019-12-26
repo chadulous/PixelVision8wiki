@@ -1,6 +1,6 @@
 # Clamp
 
-Limits a value between a minimum and maximum.
+The `Clamp()` API limits a value between a minimum and maximum integer.
 
 ## Usage
 
@@ -22,17 +22,17 @@ Limits a value between a minimum and maximum.
   <tr>
     <td>min</td>
     <td>int</td>
-    <td>The minimum the value can be.</td>
+    <td>The minimum value should be.</td>
   </tr>
   <tr>
     <td>max</td>
     <td>int</td>
-    <td>The maximum the value can be.</td>
+    <td>The maximum value should be.</td>
   </tr>
 </table>
 
 
-## Returns
+## Returns
 
 <table>
   <tr>
@@ -47,5 +47,49 @@ Limits a value between a minimum and maximum.
 
 
 ## Example
+
+In this example, we will increase the number by 1 every frame and clamp it at 100:
+
+    class ClampExample : GameChip
+    {
+
+        private int counter;
+        private int time;
+        private int delay = 300;
+
+        public override void Update( int timeDelta)
+        { 
+            // Add the time delay to the time
+            time = time + timeDelta;
+
+            // Check if time is greater than the delay
+            if(time &gt; delay)
+            { 
+
+                // Increase the counter by 1
+                counter = Clamp(counter + 1, 0, 10);
+
+                // Reset the time
+                time = 0;
+
+            }
+        }
+
+        public override void Draw()
+        {
+
+            // Redraw the display
+            RedrawDisplay();
+
+            // Draw the counter to the display
+            DrawText("Counter " + counter, 8, 8, DrawMode.Sprite, "large", 15);
+
+        }
+
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/ClampOutput_image_0.png" /></p>
 
 

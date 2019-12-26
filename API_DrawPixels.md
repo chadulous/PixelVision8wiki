@@ -1,6 +1,8 @@
 # DrawPixels
 
-This method allows you to draw raw pixel data directly to the display. Depending on which draw mode you use, the pixel data could be rendered as a sprite or drawn directly onto the tilemap cache. Sprites drawn with this method still count against the total number the display can render but you can draw irregularly shaped sprites by defining a custom width and height. For drawnig into the tilemap cache directly, you can use this to change the way the tilemap looks at run-time without having to modify a sprite's pixel data. It is important to note that when you change a tile's sprite ID or color offset, the tilemap redraws it back to the cache overwriting any pixel data that was previously there.
+The `DrawPixels()` API allows you to push raw pixel data directly to the display. While `DrawPixels()` is used under the hood by all of the drawing APIs, you lose some performance by calling it directly, especially in Lua. Since this bypasses the sprite counter, there is no limit to the number of draw calls you can make to any of the sprite layers. While this may be advantageous in some situations, you also lose the built-in sprite pixel data caching and draw call limitation imposed by the `SpriteChip`.
+
+You can also use `DrawPixels()` to make changes to the tilemap cache layer. Since `DrawPixels()` doesn’t have a width or height restriction, you can use this API to draw irregularly shaped data directly to the tilemap cache without using any sprites. On the flip side, there is no way to use `DrawPixels()` on the tile layer, so using it will cancel the draw call. It is important to note that when you change a tile's sprite ID or color offset, the tilemap redraws it back to the cache, overwriting any pixel data that was previously there.
 
 ## Usage
 
@@ -61,5 +63,123 @@ This method allows you to draw raw pixel data directly to the display. Depending
   </tr>
 </table>
 
+
+## Draw Modes
+
+The `DrawPixels()` API supports the following draw modes:
+
+<table>
+  <tr>
+    <td>DrawMode</td>
+    <td>Layer ID</td>
+    <td>Supported</td>
+  </tr>
+  <tr>
+    <td>TilemapCache</td>
+    <td>-1</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Background</td>
+    <td>0</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>SpriteBelow</td>
+    <td>1</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>Tile</td>
+    <td>2</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Sprite</td>
+    <td>3</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>UI</td>
+    <td>4</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>SpriteAbove</td>
+    <td>5</td>
+    <td>Yes</td>
+  </tr>
+</table>
+
+
+Attempting to use an unsupported draw mode will cancel the draw request. 
+
+## Example
+
+In this example, we will take an array of color IDs and push them to the display using the DrawPixels() API. There are 3 draw mode examples showing off how to use this API in different situations:
+
+    class DrawPixelsExample : GameChip
+    {
+        int[] pixelData = {
+            -1, -1, -1, 0, 0, 0, 0, -1,
+            -1, -1, 0, 0, 14, 14, 0, -1,
+            -1, 0, 0, 14, 14, 14, 0, -1,
+            -1, 0, 14, 14, 14, 13, 0, -1,
+            -1, 0, 0, 0, 14, 13, 0, -1,
+            -1, -1, -1, 0, 14, 13, 0, -1,
+            -1, -1, -1, 0, 13, 13, 0, -1,
+            -1, -1, -1, 0, 0, 0, 0, -1,
+        };
+
+        public override void Init()
+        { 
+            // Draw the sprite data to the tilemap cache
+            DrawText("Tilemap Cache", 1, 3, DrawMode.Tile, "large", 15);
+            DrawPixels(pixelData, 8, 32, 8, 8, false, false, DrawMode.TilemapCache);
+            DrawPixels(pixelData, 16, 32, 8, 8, true, false, DrawMode.TilemapCache);
+            DrawPixels(pixelData, 24, 32, 8, 8, false, true, DrawMode.TilemapCache);
+            DrawPixels(pixelData, 32, 32, 8, 8, true, true, DrawMode.TilemapCache);
+
+            // Shfit the pixel data color IDs by 1
+            DrawPixels(pixelData, 40, 32, 8, 8, false, false, DrawMode.TilemapCache, 1);
+
+        }
+
+        public override void Draw()
+        { 
+            // Redraw the display
+            RedrawDisplay();
+
+            // Label for the sprite layer examples
+            DrawText("Sprite", 1, 6, DrawMode.Tile, "large", 15);
+
+            // You can simplify the call if you are not flipping the pixel data
+            DrawPixels(pixelData, 8, 56, 8, 8);
+
+            // Fliping the pixel data on the sprite layer, which is used by default when not provided
+            DrawPixels(pixelData, 16, 56, 8, 8, true, false);
+            DrawPixels(pixelData, 24, 56, 8, 8, false, true);
+            DrawPixels(pixelData, 32, 56, 8, 8, true, true);
+
+            // Shift the pixel data color IDs over by 1 requires passing in the draw mode
+            DrawPixels(pixelData, 40, 56, 8, 8, false, false, DrawMode.Sprite, 1);
+
+            // Draw pixel data to the sprite below layer
+            DrawText("Sprite Below", 1, 9, DrawMode.Tile, "large", 15);
+            DrawPixels(pixelData, 8, 80, 8, 8, false, false, DrawMode.SpriteBelow);
+            DrawPixels(pixelData, 16, 80, 8, 8, true, false, DrawMode.SpriteBelow);
+            DrawPixels(pixelData, 24, 80, 8, 8, false, true, DrawMode.SpriteBelow);
+            DrawPixels(pixelData, 32, 80, 8, 8, true, true, DrawMode.SpriteBelow);
+            DrawPixels(pixelData, 40, 80, 8, 8, false, false, DrawMode.SpriteBelow, 1);
+
+            // Display the total sprites used during this frame
+            DrawText("Total Sprites " + CurrentSprites, 8, 8, DrawMode.Sprite, "large", 14);
+
+        }
+    }
+
+Running this code will output the following:
+
+<p style="text-align:center"><img src="images/DrawPixelsOutput_image_0.png" /></p>
 
 

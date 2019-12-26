@@ -1,6 +1,6 @@
 # Supported File Types
 
-Here are the supported files that can go inside of a PV8 game:
+Outside of the data.json and info.json files which are required for a Pixel Vision 8 game to run, there are files that can go inside of a game project:
 
 <table>
   <tr>
@@ -66,6 +66,6 @@ Here are the supported files that can go inside of a PV8 game:
 </table>
 
 
-PV8 will ignore any additional files in a project it doesn’t know how to open or edit. Sprites and tilemaps can be created at runtime via the API. When Pixel Vision OS detects the necessary files in a folder for it to run, it will automatically display a Run icon allowing you to launch it.
+PV8 will ignore any additional files in a project that it doesn’t know how to load or edit.
 
 
