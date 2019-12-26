@@ -47,11 +47,18 @@ In this example, we are going to create a new point, increase it by `1` on every
 
     class NewPointExample : GameChip
     {
-        // Create a new point
-        private Point pos = new Point(0,0);
+        // Store the point
+        private Point pos;
 
-        public override void Update( int timeDelta)
-        { 
+        public override void Init()
+        {
+            // Use the game's NewPoint() to create a point instance
+            pos = NewPoint();
+        }
+
+        public override void Update(int timeDelta)
+        {
+
             // Increase the position by one and have it reset back to 0 if it gets bigger than the display's boundaries
             pos.X = Repeat(pos.X + 1, Display().X);
             pos.Y = Repeat(pos.Y + 1, Display().Y);
@@ -59,7 +66,7 @@ In this example, we are going to create a new point, increase it by `1` on every
         }
 
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
 
@@ -69,6 +76,7 @@ In this example, we are going to create a new point, increase it by `1` on every
         }
 
     }
+
 
 Running this code will output the following:
 

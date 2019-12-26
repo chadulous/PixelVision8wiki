@@ -4,27 +4,23 @@ While we covered the other core chips needed to configure a `PixelVisionEngine` 
 
 The `GameChip` implements both the `IUpdate` and `IDraw` interfaces. This allows you to organize your game’s business and render logic separately. To create your own custom C# game, you can do the following:
 
-`using PixelVision8.Engine.Chips;`
-
-`public class MyGameChip : GameChip`
-
-`{`
-
-    public override void Init()
+    public class MyGameChip : GameChip
     {
-        // Add custom Init logic.
-    }
+        public override void Init()
+        {
+            // Add custom Init logic.
+        }
 
-    public override void Update(int timeDelta)
-    {
-        // Add custom Update logic.
-    }
+        public override void Update(int timeDelta)
+        {
+            // Add custom Update logic.
+        }
 
-    public override void Draw()
-    {
-        // Add custom Draw logic.
+        public override void Draw()
+        {
+            // Add custom Draw logic.
+        }
     }
-`}`
 
 You’ll also need a way to configure an instance of the `PixelVisionEngine` by creating a wrapper for the `GameRunner`. Be sure to check out the example `CSharpRunner.Desktop` project to see how to pass in your own game chip or build on top of the existing example game provided in the project.
 

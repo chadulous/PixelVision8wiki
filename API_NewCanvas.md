@@ -147,7 +147,7 @@ In this example, we are going to look at how to draw a line, a circle, and a squ
         public override void Init()
         { 
             // Create a new canvas the size of the display
-            canvas = new Canvas(Display().X, Display().Y, this);
+            canvas = NewCanvas(Display().X, Display().Y);
 
             // Set the canvas stroke to a 1x1 pixel brush
             canvas.SetStroke(new int[]{ 6}, 1, 1);

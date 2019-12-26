@@ -66,47 +66,45 @@ If you want to move up or down an octave simply add or subtract 12 to the MIDI v
 
 Songs are simply a collection of patterns. You can think of them almost like a playlist. Here is an example of a truncated `music.json` file:
 
-`{`
-
-  "MusicChip": {
-
-    "version": "v2",
-    "songs": [
-      {
-        "songName": "Song1",
-        "start": 0,
-        "end": 5,
-        "patterns": [0,1,2, ... ]
-      },
-      ...
-    ],
-    "patterns": [
-      {
-        "patternName": "PV8",
-        "speedInBPM": 320,
-        "tracks": [
+    {
+      "MusicChip": {
+        "version": "v2",
+        "songs": [
           {
-            "sfxID": 0,
-            "notes":[36,0,0, ... ]
+            "songName": "Song1",
+            "start": 0,
+            "end": 5,
+            "patterns": [0,1,2, ... ]
           },
-          {
-            "sfxID": 1,
-            "notes":[40,0,0, ... ]
-          },
-          {
-            "sfxID": 2,
-            "notes":[48,0,0, ... ]
-          },
-          {
-            "sfxID": 3,
-            "notes":[36,0,0, ... ]
-          }
+          ...
         ],
-      ...
+        "patterns": [
+          {
+            "patternName": "PV8",
+            "speedInBPM": 320,
+            "tracks": [
+              {
+                "sfxID": 0,
+                "notes":[36,0,0, ... ]
+              },
+              {
+                "sfxID": 1,
+                "notes":[40,0,0, ... ]
+              },
+              {
+                "sfxID": 2,
+                "notes":[48,0,0, ... ]
+              },
+              {
+                "sfxID": 3,
+                "notes":[36,0,0, ... ]
+              }
+            ],
+          ...
+          }
+        ]
       }
-    ]
-  }
-`}`
+    }
 
 Each song block contains a `start` and `end` position as well as an array of `patterns`. Since each song contains 100 patterns, the `end` position will define where a song should stop playing. Each `patterns` array defaults all of its values to the first pattern which is ID `0` if you do not define other pattern IDs when it is loaded into memory.
 

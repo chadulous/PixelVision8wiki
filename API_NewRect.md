@@ -81,8 +81,8 @@ In this example, we are going to create two rectangles and test to see if they c
 
     class NewRectExample : GameChip
     {
-        // Create a rectangle
-            Rectangle rectA = new Rectangle(8, 8, 128, 128);
+        // Store the rectangle
+        Rectangle rectA;
 
         // This will store the mouse position
         private Point mousePos;
@@ -90,8 +90,14 @@ In this example, we are going to create two rectangles and test to see if they c
         // This will store the collision state
         private bool collision = false;
 
+        public override void Init()
+        {
+            // Use the game's NewRect() to create a rectangle instance
+            rectA = NewRect(8, 8, 128, 128);
+        }
+
         public override void Update(int timeDelta)
-        { 
+        {
             // Get the mouse position
             mousePos = MousePosition();
 
@@ -101,7 +107,7 @@ In this example, we are going to create two rectangles and test to see if they c
         }
 
         public override void Draw()
-        { 
+        {
 
             // Redraw the display
             RedrawDisplay();
@@ -113,8 +119,8 @@ In this example, we are going to create two rectangles and test to see if they c
             DrawRect(mousePos.X - 1, mousePos.Y - 1, 2, 2, 15);
 
         }
-
     }
+
 
 Running this code will output the following:
 

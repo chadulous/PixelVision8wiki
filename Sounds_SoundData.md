@@ -135,18 +135,16 @@ You can use any Sfxr sound generator to create a compatible 24 parameter string 
 
 Each sound effect is stored inside of the `SoundChip`’s `sounds` array property. Here is an example of how the file is structured:
 
-`{`
-
-  "SoundChip": {
-
-    "sounds": [
-      {
-        "name": "Melody",
-        "settings": "0,.05,,.2,,.2,.3,.1266,,,,,,,,,,,,,,,,,,1,,,,,,"
+    {
+      "SoundChip": {
+        "sounds": [
+          {
+            "name": "Melody",
+            "settings": "0,.05,,.2,,.2,.3,.1266,,,,,,,,,,,,,,,,,,1,,,,,,"
+          }
+        ]
       }
-    ]
-  }
-`}`
+    }
 
 This file will contain the maximum number of sound effects your game can support which is defined in the `data.json` file. You can change this cap by modifying the `totalSounds `property of the `SoundChip`.
 

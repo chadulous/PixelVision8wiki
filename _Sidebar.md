@@ -1,5 +1,4 @@
-# Tabel Of Contents*
-[Pixel Vision SDK](Home)
+# Tabel Of Contents* [Pixel Vision SDK](Home)
 * [Change Log](ChangeLog)
 * [Building Pixel Vision 8](Build_README)
     * [Cloning From Github](Build_CloningFromGithub)
@@ -103,7 +102,7 @@
     * [SplitLines](API_SplitLines)
     * [Sprite](API_Sprite)
     * [SpriteSize](API_SpriteSize)
-    * [ControllerInput](API_ControllerInput)
+    * [StopSong](API_StopSong)
     * [StopSound](API_StopSound)
     * [Tile](API_Tile)
     * [TilemapSize](API_TilemapSize)
