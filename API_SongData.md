@@ -2,7 +2,7 @@
 
 Returns a dictionary with information about the current state of the `MusicChip`. This includes whether or not a song is playing, what not it’s on, how many patterns there are and the total times the song has looped.
 
-## Summary
+## Usage
 
 `SongData ( )`
 

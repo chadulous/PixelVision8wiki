@@ -1,4 +1,4 @@
-# PlaySound ( int id, int channel )
+# PlaySound
 
 The `PlaySound()` API allows playing a single sound effect on a specific channel. The `SoundChip `has a limited number of active channels, so playing a sound effect on a channel where a sound is already playing will override it. Since the `MusicChip` shares the same audio channels, playing sound effects while a song is playing on a channel will temporarily stop the song playing on that channel and play the sound effect until the next note of the song is triggered which will overwrite the sound effect. 
 

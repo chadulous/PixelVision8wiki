@@ -2,7 +2,7 @@
 
 The `ReadAllMetadata()` API allows you to get a copy of all `metadata `values that were passed into the game when it loaded. This is useful if you do not know the exact key you are looking for and need to iterate through them until you find the one you need. There could be a lot of values in the game’s metadata so keep this in mind before trying to iterate over them all.
 
-## Summary
+## Usage
 
 `ReadMetaData ( key, defaultValue )`
 

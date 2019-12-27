@@ -1,10 +1,10 @@
-# ScrollPosition ( x, y )
+# ScrollPosition
 
 You can scroll the tilemap by calling the `ScrollPosition()` API and supplying a new scroll `X` and `Y` position. By default, calling `ScrollPosition()` with no arguments returns a `Point` with the current scroll `X` and `Y` values. If you supply an `X` and `Y` value, it updates the tilemap's scroll position the next time you call the `DrawTilemap()` method.
 
 It’s important that some of the drawing APIs like `DrawSpriteBlock()` and `DrawSprites()` will automatically use the `ScrollPosition()` API to calculate their position on the screen and if the sprites should render or not. You’ll want to take this into account when scrolling the screen and using those APIs. Finally scrolling the tilemap past its edges will have it wrap around the screen. So you’ll need to manually manage the tilemap’s boundaries in order to keep that from happening.
 
-## Summary
+## Usage
 
 `ScrollPosition ( x, y )`
 
