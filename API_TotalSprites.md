@@ -1,6 +1,6 @@
 # TotalSprites
 
-The `TotalSprites()` API returns the total number of sprites in the `SpriteChip`. By default, it returns all of the available sprites from the `SpriteChip`. By supplying `true `for the `ignoreEmpty `argument, it returns only sprites that contain pixel data. If all of the values of a sprite’s pixel data are set to `-1`, it will be considered empty by the `SpriteChip`.
+The `TotalSprites()` API returns the total number of sprites in the `SpriteChip`. By supplying `true `for the `ignoreEmpty `parameter, it will only return sprites that contain pixel data. If all of the values of a sprite’s pixel data are set to `-1`, it will be considered empty by the `SpriteChip`.
 
 ## Usage
 

@@ -1,6 +1,6 @@
 # The Bios
 
-Pixel Vision 8 uses a special bios.json file to store any changes made to the system by the user when running. When you shutdown PV8, it automatically updates the `bios.json` file to save any new changes. There are two bios files: one located in the executable’s directory and the other in the system’s shared data directory. The built-in Settings Tool will give you access to most of these properties but if you need to manually make changes, you should only do so in the `user-bios.json` file. You can find this file in the following locations based on the OS you are running Pixel Vision 8 on:
+The Pixel Vision Runners use a special `bios.json` file to configure itself when booting up. This file is located in the executable’s own directory. Any changes made to the Runner’s settings at run-time are stored in a separate file called `user-bios.json`. When you shutdown or close the Runner, it automatically writes any changes to the `bios.json` file. You can find the `user-bios.json` file in the following location based on your computer’s OS:
 
 <table>
   <tr>
@@ -9,22 +9,20 @@ Pixel Vision 8 uses a special bios.json file to store any changes made to the sy
   </tr>
   <tr>
     <td>Windows</td>
-    <td>C:\Users\UserName\AppData\Local\PixelVision8\user-bios.json</td>
+    <td>C:\Users\UserName\AppData\Local\RUNNER-NAME\user-bios.json</td>
   </tr>
   <tr>
     <td>MacOS</td>
-    <td>/Users/UserName/.local/share/PixelVision8/Tmp/user-bios.json</td>
+    <td>/Users/UserName/.local/share/RUNNER-NAME/user-bios.json</td>
   </tr>
   <tr>
     <td>Linux</td>
-    <td>/Users/UserName/.local/share/PixelVision8/Tmp/user-bios.json</td>
+    <td>/Users/UserName/.local/share/RUNNER-NAME/user-bios.json</td>
   </tr>
 </table>
 
 
-You’ll need to open this file in an external editor from your computer’s file system. This file is not accessible from inside of Pixel Vision OS. After opening the json file, you’ll find any user-specific properties the Pixel Vision 8 Runner references when booting up.
-
-On bootup, Pixel Vision 8 uses its own internal `bios.json` file to set the default values. After that is loaded, the `user-bios.json` file is loaded and any duplicated properties are overwritten by the user’s own preferences. That means that you may not see all of the available options inside of the user-bios.json file. Here is a list of each of the settings you can define, their value, and a description of what they do.
+On bootup, the `bios.json` file sets the default values. After that is loaded, the `user-bios.json` file is loaded and any duplicated properties are overwritten by the user’s own preferences. That means that you may not see all of the available options inside of the `user-bios.json` file. Here is a list of each of the bios settings that you can define, their value, and a description of what they do.
 
 <table>
   <tr>
@@ -347,11 +345,11 @@ On bootup, Pixel Vision 8 uses its own internal `bios.json` file to set the defa
 
 You can call `ReadBiosData()` and `WriteBiosData()` to make changes to the bios at any time in your game. This is helpful when creating tools or if you want to store system-wide settings between sessions when you plan on creating stand-alone games.
 
-Call ReadBiosData in order to retrieve a bios string value. You can pass in an optional default value that will be returned if the key is not found
+Call `ReadBiosData()` in order to retrieve a bios string value. You can pass an optional default value that will be returned if the key is not found
 
 `ReadBiosData(key, defaultValue)`
 
-Call WriteBiosData() to save a string value to a supplied key. If the key exists in the bios, it will be overwritten by the new value
+Call `WriteBiosData()` to save a string value to a supplied key. If the key exists in the bios, it will be overwritten by the new value
 
 `WriteBiosData(key, value)`
 

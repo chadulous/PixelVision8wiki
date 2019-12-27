@@ -14,7 +14,7 @@ A Pixel Vision 8 Runner is any code wrapper that bridges the gap between the cor
 
 * Manages the loading and playing of games plus their associated files.
 
-Runners are relatively easy to build with Visual Studio or Rider. Once you’ve cloned or downloaded the repo, you’ll find two Runner solutions.
+Pixel Vision 8 Runners are relatively easy to build with Visual Studio or Rider. Once you’ve cloned or downloaded the repo, you’ll find two Runner solutions.
 
 <p style="text-align:center"><img src="images/Runners_image_0.png" /></p>
 

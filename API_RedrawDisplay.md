@@ -1,6 +1,6 @@
 # RedrawDisplay
 
-The `RedrawAPI()` allows you to execute both the `Clear()` and `DrawTilemap()` APIs in a single call. This is a simple helper function to make redrawing the display easier. If you need to supply additional arguments to either the `Clear()` or `DrawTilemap(`) APIs then you’ll need to call each one independently without calling `RedrawDisplay()`.
+The `RedrawAPI()` allows you to execute both the `Clear()` and `DrawTilemap()` APIs in a single call. This is a simple helper function to make redrawing the display easier. If you need to supply additional arguments to either the `Clear()` or `DrawTilemap(`) APIs then you’ll need to call each one independently without using `RedrawDisplay()`.
 
 ## Usage
 

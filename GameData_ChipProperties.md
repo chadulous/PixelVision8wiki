@@ -1,14 +1,14 @@
-# Property Groups
+# Chip Properties
 
-Pixel Vision 8’s system limitations are defined in the `data.json` file. Each chip has its own properties that you can modify in order to change the look and feel of your game. You can edit this file by hand or use the Chip Editor which is included in the Pro Tools and has built-in system templates to make changing things easier. Since a game has at least 8 chips, it’s easier to look at system specs as three main categories: graphics, storage, and sound. 
+Each chip, that is defined in the `data.json` file, has its own properties that you can modify in order to change the look and feel of your game. You can edit this file by hand or use the Chip Editor which is included in the Pro Tools and has built-in system templates to make changing things easier. Since a game has at least 8 chips, it’s easier to look at system specs as three main categories: graphics, storage, and sound. 
 
-<p style="text-align:center"><img src="images/PropertyGroups_image_0.png" /></p>
+<p style="text-align:center"><img src="images/ChipProperties_image_0.png" /></p>
 
-While there is a bit of overlap between which chips are part of the GPU and storage group, each one focuses on a specific aspect of the engine and how it will perform.\
+While there is a bit of overlap between which chips are part of the GPU and storage group, each one focuses on a specific aspect of the engine and how it will perform.
 
 ## Graphics
 
-First up is the graphics group. These are responsible for the visuals of PV8 games. This group is comprised of the following properties:
+The first group contains the storage properties. These are responsible for the visuals of PV8 games. This group is comprised of the following properties:
 
 <table>
   <tr>
@@ -56,7 +56,7 @@ First up is the graphics group. These are responsible for the visuals of PV8 gam
 
 ## Storage
 
-The second group is the storage. These properties are responsible for how much data can be stored in a PV8 game. This group is comprised of the following properties:
+The second group makes up the storage properties. These properties are responsible for how much data can be stored in a PV8 game. This group is comprised of the following properties:
 
 <table>
   <tr>
@@ -94,7 +94,7 @@ The second group is the storage. These properties are responsible for how much d
 
 ## Audio
 
-The last group is audio. These properties define how sound effects and music work in a PV8 game. This group is comprised of the following properties:
+The last group makes up the audio properties. These properties define how sound effects and music work in a PV8 game. This group is comprised of the following properties:
 
 <table>
   <tr>
@@ -130,7 +130,7 @@ The last group is audio. These properties define how sound effects and music wor
 </table>
 
 
-## Extra Settings
+## Extra Properties
 
 Finally, there are additional properties that are useful for more advanced users. You should only edit these if you know what you are doing.
 

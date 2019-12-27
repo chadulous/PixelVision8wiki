@@ -1,6 +1,6 @@
 # DrawSprites
 
-The `DrawSprites()` API makes it easier to combine and draw groups of sprites to the display. Unlike the DrawSpriteBlock() API, you define the exact sprites you want to be drawn. This is useful when trying to render 4 sprites together as a larger 16x16 pixel graphic but their IDs are not next to each other in SpriteChip’s memory. While there is no limit on the size of the sprite group which can be rendered, it is important to note that each sprite in the array still counts as an individual sprite. 
+The `DrawSprites()` API makes it easier to draw a group of sprites to the display. Unlike the DrawSpriteBlock() API, you define the exact sprites you want to be drawn. This is useful when trying to render 4 sprites together as a larger 16x16 pixel graphic but their IDs are not next to each other in SpriteChip’s memory. While there is no limit on the size of the sprite group which can be rendered, it is important to note that each sprite in the array still counts as an individual sprite. 
 
 While `DrawSprites()` renders the sprite group in a grid, you can flag some sprites to be ignored by setting their ID to `-1`. These will not count against the total sprites, unlike `DrawSpriteBlock()` which includes all sprites regardless if they are empty or not. This is also useful when sprites have been compressed and are not stored in the `SpriteChip` memory in blocks of IDs.
 

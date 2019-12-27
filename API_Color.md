@@ -1,6 +1,8 @@
 # Color
 
-The `Color()` API allows you to read and update color values in the `ColorChip`. This API has two modes that require a color ID to work. By calling the method with just an ID, like `Color(0)`, it returns a HEX string for that color. If you supply an additional HEX string value, like `Color(0, "#FFFF00")`, you can change the color with the given ID. While you can use this method to modify color values directly, you should avoid doing this at run time since the `DisplayChip` must re-cache the new HEX value. It’s best to set up all the colors you need ahead of time in the `data.json` file.
+The `Color()` API allows you to read and update color values in the `ColorChip`. This API has two modes that require a color ID to work. By calling the method with just an ID, like `Color(0)`, it returns a HEX string for that color. If you supply an additional HEX string value, like `Color(0, "#FFFF00")`, you can change the color with the given ID. 
+
+While you can use this method to modify color values directly, you should avoid doing this at run time since the `DisplayChip` must re-cache the new HEX value. It’s best to set up all the colors you need ahead of time in the `data.json` file.
 
 ## Usage
 
