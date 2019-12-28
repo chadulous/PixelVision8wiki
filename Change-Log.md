@@ -18,4 +18,4 @@ This is currently a beta release of Pixel Vision 8. You can now log bugs specifi
 
 * [Need to disable disks from bios](https://github.com/PixelVision8/PixelVision8/issues/62)
 
-
+
