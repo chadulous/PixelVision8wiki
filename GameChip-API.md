@@ -78,19 +78,11 @@ This is called when a game first loads up.
 
 **Draw()**
 
-This is called once per frame after the Update() has been completed.
-
-**Reset()** 
-
-This is called when a game is restarted.
+Draw() is called once per frame after the Update() has been completed. This is where all of your game's draw calls should take place such as clearing the display, drawing sprites, and pushing raw pixel data into the display.
 
 **Update( timeDelta )**
 
-This is called once per frame at the beginning of the game loop.
-
-**Shutdown()**
-
-This is called when a game is shutting down.
+Update() is called once per frame at the beginning of the game loop. This is where you should put all non-visual game logic such as character position calculations, detecting input and performing updates to your animation system. The `timeDelta` is provided on each frame so you can calculate the difference in milliseconds since the last render took place.
 
 ## Music 
 

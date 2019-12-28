@@ -1,7 +1,7 @@
-# Tabel Of Contents* [PV8 Source Code](PV8-Source-Code)
+# Tabel Of Contents* [Home](Home)
 * [Change Log](Change-Log)
 * [Cloning From Github](Cloning-From-Github)
-* [Making C# Games](Making-C#-Games)
+* [Making C Sharp Games](Making-C-Sharp-Games)
 * [Runners](Runners)
     * [MonoGame Runners](MonoGame-Runners)
     * [Pixel Vision 8 Runners](Pixel-Vision-8-Runners)
