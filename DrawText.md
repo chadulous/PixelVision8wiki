@@ -1,5 +1,3 @@
-# DrawText 
-
 The` DrawText()` API allows you to render text to the display. Files ending with the `.font.png` extension are loaded by the `FontChip `and converted into character sprites. The `FontChip `stores these characters separately from `SpriteChip`’s own sprites. You can access the font by using it’s file name, without an extension, when drawing text to the display. While the `FontChip` stores each character as an 8 x 8 sprite, you can make still make smaller characters as long as each one fits inside of a single sprite. Font’s are laid out in a specific order to match up with each character’s ASCII value, starting at 32 for an empty space.
 
 <p style="text-align:center"><img src="images/DrawText_image_0.png" /></p>

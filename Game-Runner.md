@@ -1,5 +1,3 @@
-# Game Runner
-
 The GameRunner class extends [MonoGame](http://www.monogame.net/)’s `Game` class and implements Pixel Vision 8’s `IRunner` interface. This class contains all of the logic you’ll need in order to run Pixel Vision 8 on top of MonoGame. It will create a `ServiceManager`, the default chips, manage system settings, and run an instance of the` PixelVisionEngine` in sync with MonoGame’s own `Update()` and `Draw()` calls.
 
 If you are looking to build your own custom game Runner, this is the class you’d want to extend. In addition to running the engine instance, it also facilitates configuring the `DisplayTarget`, changing screen resolution, loading files, passing in input, and capturing any errors. You can learn more about Runners by taking a look at the ones included in the PixelVision8 Github repo.

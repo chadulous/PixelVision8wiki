@@ -1,5 +1,3 @@
-# The Bios
-
 The Pixel Vision Runners use a special `bios.json` file to configure itself when booting up. This file is located in the executable’s own directory. Any changes made to the Runner’s settings at run-time are stored in a separate file called `user-bios.json`. When you shutdown or close the Runner, it automatically writes any changes to the `bios.json` file. You can find the `user-bios.json` file in the following location based on your computer’s OS:
 
 <table>

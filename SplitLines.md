@@ -1,5 +1,3 @@
-# SplitLines
-
 The `SplitLines()` API converts text with line breaks (`\n`) into an array. This can be used in conjunction with the `WordWrap()` helper to render large blocks of text line by line with the `DrawText()` API.
 
 ## Usage

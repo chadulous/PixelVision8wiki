@@ -1,5 +1,3 @@
-# Rendering To The Display
-
 Pixel Vision 8 is designed specifically to render pixel data to the screen. The way that the `DisplayChip` does this differs greatly from modern rendering techniques. It is the job of Pixel Vision 8's importers to convert sprite color data into color index values. Each color ID references a position in the `ColorChip`'s memory. 
 
 <p style="text-align:center"><img src="images/RenderingToTheDisplay_image_0.png" /></p>

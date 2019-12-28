@@ -1,5 +1,3 @@
-# NewRect
-
 A `Rectangle `is a Pixel Vision 8 primitive used for defining the bounds of an object on the display. It contains an `X`, `W`, `Width` and `Height` property. The Rectangle object class also has some additional methods to aid with collision detection.
 
 ## Usage

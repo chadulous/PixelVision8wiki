@@ -1,5 +1,3 @@
-# The Game Chip
-
 While we covered the other core chips needed to configure a `PixelVisionEngine` instance, there is one chip that represents the game itself. When creating a C# PV8 game, you’ll want to extend the `GameChip` and pass that into the engine’s constructor, along with all of the other chips your game needs. The `GameChip` provides access to all of the underlying chips through a common API that is shared by the C# and Lua versions of Pixel Vision8.
 
 The `GameChip` implements both the `IUpdate` and `IDraw` interfaces. This allows you to organize your game’s business and render logic separately. To create your own custom C# game, you can do the following:

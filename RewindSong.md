@@ -1,5 +1,3 @@
-# RewindSong
-
 The `RewindSong()` API allows you rewind the currently playing song to a specific position and pattern ID. Calling this API without any arguments will simply rewind the song to the beginning of the first pattern. After rewinding a song, it will stop playing. You will have to call the PlaySong() API to have it continue from the rewound position.
 
 ## Usage

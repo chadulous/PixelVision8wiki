@@ -1,5 +1,3 @@
-# SpriteSize
-
 The `SpriteSize(`) API returns the default sprite size as a read-only `Point` where `X` and `Y` represent the `Width` and `Height`.
 
 ## Usage

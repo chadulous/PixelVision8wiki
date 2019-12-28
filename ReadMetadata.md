@@ -1,5 +1,3 @@
-# ReadMetadata
-
 The `ReadMetadata()` API allows you to read the `metadata `that is passed into the game when it loads. This is used by the Pixel Vision 8 Runner to pass data between load sessions. When a game is restarted, it will get a copy of the original `metadata `that was used to launch the game for the first time. The `metadata `is eventually cleared as the Runner loads new games, so it’s important to save any of the `metadata `you need between sessions to the game’s `saves.json` file. Finally, all keys and values are strings. This means if you are reading an integer or boolean, you’ll need to convert it in order to get its native type.
 
 ## Usage

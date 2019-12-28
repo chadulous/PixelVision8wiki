@@ -1,5 +1,3 @@
-# WriteSaveData
-
 The `WriteSaveData()` API allows you to write saved data by supplying a key and value. Once saved, this data persists even after restarting a game.
 
 ## Usage

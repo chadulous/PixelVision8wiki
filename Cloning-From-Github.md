@@ -1,5 +1,3 @@
-# Cloning From Github
-
 Before you clone from Github, let’s talk about how the repo is structured, and which branch or tag you should clone. While you can simply check out the master branch, each stable build is tagged based on its version.
 
 ![image alt text](images/CloningFromGithub_image_0.png)

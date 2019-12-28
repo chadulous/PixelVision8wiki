@@ -1,5 +1,3 @@
-# MaxSpriteCount
-
 The `MaxSpriteCount()` API returns a value representing the total number of sprites the `SpriteChip `can render in a single frame. You can use this value to alternate showing and hiding sprites based on hitting the total sprite count similar to the flicker effect you’d see in early 8-bit systems that tried to show more sprites than were allowed per frame. This is a read-only property at runtime.
 
 ## Usage

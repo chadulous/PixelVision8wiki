@@ -1,5 +1,3 @@
-# Sound
-
 The `Sound()` API allows you to read raw sound data from the `SoundChip`. You need to provide a sound effect ID. If you supply the optional data argument, which is a comma-delimited string of sound effect property values, you’ll be able to update the sound effect.
 
 ## Usage

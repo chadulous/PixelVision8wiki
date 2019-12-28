@@ -1,5 +1,3 @@
-# DrawRect
-
 The `DrawRect()` API allows you to display a rectangle with a fill color on the screen. Since this API uses `DrawPixels()`, rectangles can be drawn to the tilemap cache or sprite layers. You can also use `DrawRect()` to quickly clear the screen or debug objects on the screen such as bounding boxes for collision detection. It’s important to note that the rectangle’s pixel data is created every time the draw request is called, so there could be a performance hit if `DrawRect()` is used too much on each frame.
 
 ## Usage

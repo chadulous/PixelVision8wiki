@@ -1,5 +1,3 @@
-# RebuildTilemap
-
 The `RebuildTilemap()` API forces the tilemap to redraw the tilemap cache layer. Use this to clear any pixel data drawn on top of tiles in the tilemap cache layer.
 
 ## Usage

@@ -1,5 +1,3 @@
-# GameChip API
-
 All Pixel Vision 8 games have access to a set of common set of APIs. These are exposed via the `GameChip`. These APIs allow you to access the underlying system chips. Below is a list of the most common APIs.
 
 ## Color

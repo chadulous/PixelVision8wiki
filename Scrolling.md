@@ -1,5 +1,3 @@
-# Scrolling
-
 The `TilemapChip` allows you to cache an entire tilemap in memory which helps optimize rendering larger maps. The advantage here is that only the data visible to the screen is copied over to the display when calling `DrawTilemap()`. Changing the scroll value allows you to move the background which was a popular technique seen in side-scrolling games. To scroll the tilemap, you can use the `ScrollPosition()` method and supply an `x` and `y` offset value.
 
 For example. If the game’s resolution is 160 x 144 and our tilemap is `288` x `144`, we can scroll horizontally by setting the scroll position’s X value to 72.

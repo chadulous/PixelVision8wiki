@@ -1,5 +1,3 @@
-# Draw Multiple Sprites
-
 Pixel Vision 8 has two APIs that make it easier to multiple sprites to the screen at once. The `DrawSprites()` and `DrawSpriteBlock()` are very similar but differ in one important way which is how you supply it the sprite IDs to render. 
 
 The `DrawSpriteBlock()` API is the easier one to start with. Similar to how `DrawSprite()` works, you supply a single sprite ID. This ID represents the upper-left-hand corner of the sprites you plan on drawing. From there you supply a `width `in columns and `height `in rows to tell the drawing API which sprites to use in memory. Here is a 16 x 6 section of memory from the SpriteChip.

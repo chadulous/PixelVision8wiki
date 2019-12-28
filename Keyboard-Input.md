@@ -1,5 +1,3 @@
-# Keyboard Input
-
 If Pixel Vision 8 has access to the keyboard, you can capture keypresses by calling the `Key()` method:
 
 `Key(key, state)`

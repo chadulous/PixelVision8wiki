@@ -1,5 +1,3 @@
-# Sprite Limits
-
 Original 8-bit consoles had hard limits on the number of sprites they could display during a single frame. The total number of draw calls allows you to not only create a more authentic-looking 8-bit game, but it also limits the amount of pixel data pushed to the renderer in each pass. 
 
 For example, the original NES was only able to render 64 sprites at one time. This can be achieved by editing the `data.json` and modifying the `SpriteChip`’s `maxSpriteCount` property. 

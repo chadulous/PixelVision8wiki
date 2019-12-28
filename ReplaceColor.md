@@ -1,5 +1,3 @@
-# ReplaceColor
-
 The `ReplaceColor()` API allows you to quickly replace a color with another color ID. This avoids triggering rebuilding the `DisplayChip `color cache which could impact performance. Consider this an alternative to using the `Color()` method. Calling `ReplaceColor()` has little to no performance penalty at run-time but is a one-way operation, meaning you can’t revert the color you replace with the previous value.
 
 ## Usage

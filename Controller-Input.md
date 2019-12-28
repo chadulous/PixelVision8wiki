@@ -1,5 +1,3 @@
-# Controller Input
-
 There are two controllers for player one and two. The first controller ID is 0 and the second is 1. You can get the state of a given controller by calling the `Button()` method:
 
 `bool Button( button, state, controllerID)`

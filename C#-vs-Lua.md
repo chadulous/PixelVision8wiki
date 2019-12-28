@@ -1,5 +1,3 @@
-# C# vs Lua
-
 The API documentation was designed to be used for creating C# or Lua games. If you are not familiar with one of the languages, this document contains some helpful hints when reading the documentation. 
 
 ## Data Structures

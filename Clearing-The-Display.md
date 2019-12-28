@@ -1,5 +1,3 @@
-# Clearing the Display
-
 When you create a new project without any code in it, the display simply shows the background color. This default color is 0 which is the first color in the `ColorChip`. If the color is out of range, it will default to the background color as well.
 
 <p style="text-align:center"><img src="images/ClearingTheDisplay_image_0.png" /></p>

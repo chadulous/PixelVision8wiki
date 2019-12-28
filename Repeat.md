@@ -1,5 +1,3 @@
-# Repeat
-
 The `Repeat()` API allows you to reset the value of a number if it goes past a maximum value. When counting backward, `Repeat()` will set the value to the maximum when below 0. 
 
 ## Usage

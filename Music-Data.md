@@ -1,5 +1,3 @@
-# Music Data
-
 All of the game’s songs and patterns data are stored in the `music.json` file. This file is broken up into two parts. The top containing the song data and the bottom which contains the pattern data. 
 
 Patterns are the building block for songs and contain the playback speed property called `speedInBPM`, as well as an array of tracks. Each track references a sound effect ID to use as the instrument for playback. Each instrument will play but based on the channel, the `waveType` may be overridden. Each pattern track maps back to the Sound Chip’s channels. So if channel `0` is set to `Square`, any instrument played on this channel will be forced to use the `Square` waveform.

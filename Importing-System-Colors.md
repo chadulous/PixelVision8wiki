@@ -1,5 +1,3 @@
-# Importing System Colors
-
 The color importer scans the PNG’s color data a pixel at a time, starting in the upper-left corner and ending in the bottom right. As it does this, each color is saved into memory with a unique ID until reaching the total color limit of 256 system colors.
 
 To create your `color.png` file by hand, simply make a single line of pixels or lay them out in a grid. Here is an example of how the color importer traverses a grid of pixels inside of a small 4x4 pixel `color.png` file:

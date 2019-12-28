@@ -1,5 +1,3 @@
-# Runners
-
 A Pixel Vision 8 Runner is any code wrapper that bridges the gap between the core engine and the host OS. The Runner performs the following tasks:
 
 * Facilitates rendering the `DisplayChip`’s pixel data on the screen.

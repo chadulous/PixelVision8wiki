@@ -1,5 +1,3 @@
-# Using Color Offset
-
 Pixel Vision 8 doesn’t have a built-in palette mode. Instead, there is an ability to shift the color ID of a sprite by an offset value before it is drawn to the display. You can use this to simulate palette swapping in your own game based on how you organize the system colors. This means you will need to calculate the color offset by hand and supply it when drawing sprites to the screen. Let’s take a look at how this actually works in code. We’ll start with a grey-scale sprite that uses a color-map.png file to map the default system colors.
 
 <p style="text-align:center"><img src="images/PaletteColorOffset_image_0.png" /></p>

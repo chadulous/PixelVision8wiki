@@ -1,5 +1,3 @@
-# Sound Data
-
 Pixel Vision 8 sound effects are stored in the `sounds.json` file. This file defines all of the available sound effects that your game can playback at runtime. Each sound effect is stored as a 24 value comma-delimited string. Here is a mapping of each sound property.
 
 <table>

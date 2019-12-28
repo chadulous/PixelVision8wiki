@@ -1,5 +1,3 @@
-# Tilemaps
-
 There are two ways to import tilemaps into your game. The easiest way is to provide a `tilemap.png` file that works similar to the `sprite.png`. Since tilemaps are simply compressed data structures representing sprite IDs in a grid, the tilemap PNG file is cut up into 8 x 8 sprites and that pixel data is compared to existing sprites in memory. 
 
 By default, Pixel Vision 8 as a resolution of 256 x 240 pixels, which equates to 32 sprites horizontally and 30 sprites vertically. This means you can display a total of 960 sprites on the screen at one time. Here is an example `tilemap.png`:

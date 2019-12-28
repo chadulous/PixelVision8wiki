@@ -1,5 +1,3 @@
-# MonoGame Runners
-
 MonoGame Runners are bare bone wrappers for Pixel Vision 8 games. There are two runners, one for C# games and the other for Lua. Each runner helps bridge the gap between the Pixel Vision 8’s C# code and the native operating system. Both runners have the same basic functionality, so you’ll need to figure out the one that best suits your needs base on the programming language you prefer to use. The two MonoGame Runners are inside of the `MonoGameRunners.snl` solution at the root of the project folder.
 
 <p style="text-align:center"><img src="images/MonoGameRunners_image_0.png" /></p>

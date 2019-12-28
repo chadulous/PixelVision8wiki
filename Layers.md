@@ -1,5 +1,3 @@
-# Layers
-
 The `DisplayChip `has a special `layers `property which helps define the rendering priority of each draw call. You can find this by editing the `data.json` file directly. By default, Pixel Vision 8 games will have six layers.
 
 <table>

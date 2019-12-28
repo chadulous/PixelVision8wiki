@@ -1,5 +1,3 @@
-# Pixel Vision Engine
-
 Before digging into the MonoGame runner example, let's walk through the general code architecture of Pixel Vision 8. We’ll start with the `PixelVisionEngine` class. This is the main wrapper for running a game. The engine accepts a reference an instance of the ServiceManager, the chips it needs to run, and an optional name.
 
 The `ServiceManager`, which implements `IServiceLocator`, allows the engine to share services between itself and any chips. A chip is similar to a plugin. They all share a base architecture that integrates into Pixel Vision 8's lifecycle. Each chip expands the core engine by adding new features or enhancing existing ones. 

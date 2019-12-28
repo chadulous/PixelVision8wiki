@@ -1,5 +1,3 @@
-# Enums
-
 Pixel Vision 8’s APIs leverage several Enums. You can find a full listing of the enums referenced below.
 
 ## Buttons

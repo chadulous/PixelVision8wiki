@@ -1,5 +1,3 @@
-# Font Template
-
 While you can arrange your `.font.png` character sprites in any grid-based layout, the order of the characters is important. To allow the FontChip to correctly map each character to it’s ASCII equivalent, it is best practice to follow this template:
 
 <p style="text-align:center"><img src="images/FontTemplate_image_0.png" /></p>

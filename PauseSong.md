@@ -1,5 +1,3 @@
-# PauseSong
-
 The `PauseSong()` API toggles the current playback state of the sequencer. If the song is playing, it will pause. If the song is paused, it will play
 
 ## Usage

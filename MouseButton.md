@@ -1,5 +1,3 @@
-# MouseButton
-
 Pixel Vision 8 supports mouse input. You can get the current state of the mouse's left (`0`) and right (`1`) buttons by calling `MouseButton()`API. In addition to supplying a button ID, you can also provide an option `InputState`. 
 
 The `InputState` enum contains options for testing the `Down` and `Released` states of the supplied button ID. By default, `Down` is automatically used which returns true when the key was pressed in the current frame. When using `Released`, the method returns `true `if the key is currently up but was down in the last frame.

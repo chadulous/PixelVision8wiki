@@ -1,5 +1,3 @@
-# Pixel Vision 8 Runners
-
 There are two Pixel Vision 8 Runners you can explore by opening the `PixelVision8Runner.sln`. 
 
 <p style="text-align:center"><img src="images/PixelVision8Runners_image_0.png" /></p>

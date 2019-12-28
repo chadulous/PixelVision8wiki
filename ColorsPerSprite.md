@@ -1,5 +1,3 @@
-# ColorsPerSprite
-
 Pixel Vision 8 sprites have limits around how many colors they can display at once. This is called **CPS** which stands for Colors Per Sprite. The `ColorsPerSprite()` API returns this value from the `SpriteChip`. Since this value is read-only, it is best to get a reference to it when the game starts up and store it in a variable your game can access
 
 ## Usage

@@ -1,5 +1,3 @@
-# Mouse Input
-
 Pixel Vision 8 offers access to the mouse’s position and button states. Unlike controllers or keys, this is considered a special input and displaying a cursor or pointer will have to be manually drawn to the screen.
 
 To access the mouse’s position, you can call the `MousePosition()` method:

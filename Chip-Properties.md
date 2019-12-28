@@ -1,5 +1,3 @@
-# Chip Properties
-
 Each chip, that is defined in the `data.json` file, has its own properties that you can modify in order to change the look and feel of your game. You can edit this file by hand or use the Chip Editor which is included in the Pro Tools and has built-in system templates to make changing things easier. Since a game has at least 8 chips, it’s easier to look at system specs as three main categories: graphics, storage, and sound. 
 
 <p style="text-align:center"><img src="images/ChipProperties_image_0.png" /></p>

@@ -1,5 +1,3 @@
-# Overscan
-
 The `DisplayChip`’s `overscan `property tells the engine how many pixels to crop from the right and bottom side of the screen. Leveraging Pixel Vision 8's overscan area is useful when trying to hide sprites off-screen to keep them from wrapping. Older consoles had the ability to "blank", or not render, a row or column of the display to account for this. This was one way they were able to account for the non-visible areas CRT monitors had around their edges and to deal with sprites wrapping around the display.
 
 If no overscan value is set, the sprites will immediately wrap around the right and bottom edges of the screen. Let’s take a look at two turtle shells as they move horizontally and vertically towards the edge of the screen.  As you can see, Any pixel data that goes past the edge of the screen immediately wrap to the opposite side of the screen.

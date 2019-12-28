@@ -1,5 +1,3 @@
-# Displaying the Tilemap
-
 By default, calling the `Clear()` API will only redraw the background fill color. If you want to render the tilemap to the display, you will need to call `DrawTilemap()`. You can clear the display and draw the tilemap with a single API call by using `RedrawDisplay()`. While this is the easiest way to redraw the tilemap between frames, there are some advantages to manually clearing the display and drawing the tilemap.
 
 <p style="text-align:center"><img src="images/DisplayingTheTilemap_image_0.png" /></p>

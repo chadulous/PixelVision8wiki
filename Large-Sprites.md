@@ -1,5 +1,3 @@
-# Large Sprites
-
 Even though Pixel Vision 8 can only support 8x8 sprites, you can still use larger sprites in your game. To do this, you will need to combine those sprites at run-time. Let's take a look at a simple platform made up from a couple of 8x8 sprites:
 
 <p style="text-align:center"><img src="images/LargeSprites_image_0.png" /></p>

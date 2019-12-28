@@ -1,5 +1,3 @@
-# Font Characters
-
 Each font character in the `.font.png` file should match up to their ASCII values. The parser starts cutting out characters from the upper left-hand corner of the png so the first sprite will map to ASCII 32, which represents empty space. Each character after that goes up in value. Here is a chart showing the breakdown of the default supported characters:
 
 <table>

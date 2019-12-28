@@ -1,5 +1,3 @@
-# Rendering Sprites
-
 You can draw a single sprite to the display via the `DrawSprite()` API. This API requires a sprite `ID` as well as an `x` and `y` position for where to place the sprite on the screen. By default, the display wraps sprites so if you draw a sprite to an `x` or `y` position past the display’s dimensions, it part of it will appear on the opposite side of the screen. 
 
 For example, let’s draw a sprite to the display with the following code.

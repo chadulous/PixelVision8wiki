@@ -1,5 +1,3 @@
-# InputString
-
 The `InputString()` API returns the keyboard input from the current frame. This API is useful for capturing keyboard text input.
 
 ## Usage

@@ -1,5 +1,3 @@
-# Importing Sprites
-
 Pixel Vision 8 supports importing 8 x 8 pixel sprites from a `sprite.png` file. The importer moves through the `sprite.png` file starting in the upper left-hand corner, converting each 8 x 8 pixel block of pixel data into a format the `SpriteChip` can store. By default, all sprites are added to the `SpriteChip` memory, until space runs out. The `SpriteChip` can store up to 2,048 unique sprites in memory.
 
 <p style="text-align:center"><img src="images/ImportingSprites_image_0.png" /></p>

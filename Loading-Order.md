@@ -1,5 +1,3 @@
-# Loading Order
-
 When Pixel Vision 8 runs a game, each file is loaded in a specific order. Knowing this order is important to understand how a game’s data is parsed by the engine. Here are the steps that Pixel Vision 8 performs when loading a game’s files:
 
 <table>

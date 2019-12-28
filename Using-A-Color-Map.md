@@ -1,5 +1,3 @@
-# Using A Color Map
-
 The color map allows the engine to better understand how to index sprite, font and tilemap PNG colors when they don’t match up to the system colors. Without a `color-map.png`, the engine automatically attempts to use the system colors as the index for each color found in a sprite. With the color map, you can set the colors of your sprites independent of the game’s actual system colors re-map them to default colors so they render correctly. Let’s take a look at a few sprites and how their colors are indexed when imported:
 
 <p style="text-align:center"><img src="images/ParsingColorMapData_image_0.png" /></p>

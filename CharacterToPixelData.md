@@ -1,5 +1,3 @@
-# CharacterToPixelData
-
 The `CharacterToPixelData()` API converts a single font character into raw pixel data.
 
 ## Usage

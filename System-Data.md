@@ -1,5 +1,3 @@
-# System Data
-
 Pixel Vision 8 is the only fantasy console that allows you to configure each game’s limitations to match your own needs. While there are hard limits that the `PixelVisionEngine` will enforce, you’ll find that PV8 can be adapted to be easier to work with for new developers or locked down to create a challenge closer to the real limitations found on the original 8-bit consoles. Since each game has its own `data.json` file, these limitations are specific to that game and simply instruct Pixel Vision 8 how to run.
 
 It’s important to understand that Pixel Vision 8’s limitations are rule-based, meaning they are more like guidelines on how the core engine should work. The `data.json` defines how the actual engine and the rest of the files are loaded into memory. This file is responsible for everything that makes your game’s system specs unique. Here is a sample of what a typical `data.json` file looks like:

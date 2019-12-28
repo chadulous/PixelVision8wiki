@@ -1,5 +1,3 @@
-# The Tilemap Cache
-
 The tilemap cache layer has some additional advantages than just optimizing rendering the tilemap to the screen. You can also use the tilemap cache layer as an additional canvas in your game. Let’s take a look at how this works.
 
 One way to take advantage of the tilemap cache layer is to draw text on top of the tilemap. You may not want to display each text character as a single sprite, especially if the text is dynamic meaning you wouldn’t want it set as tiles. To get around this, you can use any Draw API that accepts a DrawMode to render text on top of the tilemap cache layer. Once drawn, the pixel data will not change unless you update any tiles underneath it or rebuild the entire tilemap cache.

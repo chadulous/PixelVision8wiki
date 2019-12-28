@@ -1,5 +1,3 @@
-# IsChannelPlaying
-
 Returns a bool if the specified audio channel is playing a sound. Since channels can only play one sound effect at a time, you may need to test if a channel is currently playing before playing a new sound effect.
 
 ## Usage
