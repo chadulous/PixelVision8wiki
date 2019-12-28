@@ -18,7 +18,7 @@ Now we’ll need to make a copy of the default C# project and import it back int
 
 Before we import this in Visual Studio, we’ll need to make a few changes to the `MyGame.Desktop.csproj` file you just renamed.  Look for the `ProjectGuid` node. We need to give this a unique ID so we don’t get a conflict with other projects in the solution.
 
-![image alt text](images/MakingCSharpGames_image_4.png)
+<p style="text-align:center"><img src="images/MakingCSharpGames_image_4.png" /></p>
 
 You can use an [online generator](https://guidgenerator.com/) to or make it up yourself. You can also use this opportunity to make changes to any of the project’s other values such as its name and version number. After you’ve made your changes, add the project to the solution by right-clicking on the `Runner` folder and selecting `Add > Existing Project` from the menu.
 
@@ -40,7 +40,7 @@ In order to make a new game, we need to copy the `PixelVision8System` folder the
 
 Once you’ve created the new project folder, change the path in the `MyGame.Desktop` file. You can also delete the `code.lua` file in the game folder since we won’t be using it in C#.
 
-![image alt text](images/MakingCSharpGames_image_9.png)
+<p style="text-align:center"><img src="images/MakingCSharpGames_image_9.png" /></p>
 
 Now, when you return to Visual Studio and reload the solution, you’ll see all of the files from the `MyGame` folder, referenced in the project’s `Content` folder.
 

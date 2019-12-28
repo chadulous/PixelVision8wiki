@@ -30,7 +30,7 @@ By default, Pixel Vision 8 has 16 flag values starting a `0` and ending at `15`.
   </tr>
   <tr>
     <td>value</td>
-    <td>int?</td>
+    <td>int</td>
     <td>The new value for the flag. Setting the flag to -1 means no collision.</td>
   </tr>
 </table>
