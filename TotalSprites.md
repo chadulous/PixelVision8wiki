@@ -15,7 +15,7 @@ The `TotalSprites()` API returns the total number of sprites in the `SpriteChip`
   <tr>
     <td>ignoreEmpty</td>
     <td>bool</td>
-    <td>This is an optional value that defaults to true. When set to true, the SpriteChip returns the total number of sprites that are not empty (where all the pixel data is set to -1). Set this value to false if you want to get all of the available color slots in the ColorChip regardless if they are empty or not.</td>
+    <td>This is an optional parameter that defaults to false to get all available sprites from the SpriteChip or supply true for non-empty (where all the pixel data is set to -1) sprites.</td>
   </tr>
 </table>
 

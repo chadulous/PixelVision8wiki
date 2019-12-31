@@ -11,23 +11,19 @@ In this example, we’ll be using RedrawDisplay() to clear the screen and draw t
     class RedrawDisplayExample : GameChip
     {
         public override void Init()
-        { 
+        {
             // Draw the FPS label to the tilemap
             DrawText("FPS ", 1, 1, DrawMode.Tile, "large", 15);
 
         }
 
-        public override void Update(int timeDelta)
-        { 
-            // Draw the FPS value to the display on every frame
-            DrawText(fps.ToString(), 40, 8, DrawMode.Sprite, "large", 14);
-
-        }
-
         public override void Draw()
-        { 
+        {
             // Redraw the display
             RedrawDisplay();
+
+            // Draw the FPS value to the display on every frame
+            DrawText(fps.ToString(), 40, 8, DrawMode.Sprite, "large", 14);
         }
     }
 

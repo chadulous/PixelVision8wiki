@@ -15,7 +15,7 @@ The `TotalColors()` API returns the total number of colors in the `ColorChip`. B
   <tr>
     <td>ignoreEmpty</td>
     <td>bool</td>
-    <td>This is an optional parameter that defaults to false to get all available colors from the ColorChip or supply true for non-transparent (#FF00FF) colors.</td>
+    <td>This is an optional parameter that defaults to false to get all available colors from the ColorChip or supply true for all non-transparent (#FF00FF) colors.</td>
   </tr>
 </table>
 
