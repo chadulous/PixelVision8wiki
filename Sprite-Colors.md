@@ -2,11 +2,11 @@ When the `SpriteChip` imports each sprite, it analyzes the total number of color
 
 While processing sprites, the importer calculates if each one contains more colors that are allowed. When this happens, additional colors are converted to the default mask color in order to force the sprite to adhere to the CPS limitation. Here is an example of how this works with the four sprites that make up the Reaper Boy character:
 
-<p style="text-align:center"><img src="images/SpriteColors_image_0.png" /></p>
+![image alt text](images/SpriteColors_image_0.png)
 
 If we reduce the CPS to 3, you begin losing pixel data:
 
-<p style="text-align:center"><img src="images/SpriteColors_image_1.png" /></p>
+![image alt text](images/SpriteColors_image_1.png)
 
 Understanding how CPS works is critical to sprites into your PV8 game.
 

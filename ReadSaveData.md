@@ -74,6 +74,6 @@ In this example, we are going to attempt to read the last time the game was load
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ReadSaveDataOutput_image_0.png" /></p>
+![image alt text](images/ReadSaveDataOutput_image_0.png)
 
 

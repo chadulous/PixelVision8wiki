@@ -80,6 +80,6 @@ In this example, we will treat a 1D as a 2D array and get a value from it based 
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/CalculateIndexOutput_image_0.png" /></p>
+![image alt text](images/CalculateIndexOutput_image_0.png)
 
 

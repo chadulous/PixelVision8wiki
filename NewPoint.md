@@ -78,6 +78,6 @@ In this example, we are going to create a new point, increase it by `1` on every
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/NewPointOutput_image_0.png" /></p>
+![image alt text](images/NewPointOutput_image_0.png)
 
 

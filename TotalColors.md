@@ -59,6 +59,6 @@ In this example, we are going to display the total color values:
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/TotalColorsOutput_image_0.png" /></p>
+![image alt text](images/TotalColorsOutput_image_0.png)
 
 

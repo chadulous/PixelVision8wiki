@@ -94,6 +94,6 @@ In this example, we’ll change the background color after a short delay. To do 
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ReplaceColorOutput_image_0.png" /></p>
+![image alt text](images/ReplaceColorOutput_image_0.png)
 
 

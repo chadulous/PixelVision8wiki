@@ -88,6 +88,6 @@ In this example, we will increase the number by 1 every frame and clamp it at 10
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ClampOutput_image_0.png" /></p>
+![image alt text](images/ClampOutput_image_0.png)
 
 

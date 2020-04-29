@@ -44,7 +44,7 @@ A single sprite page is 128x128 pixels, which contains 256 sprites. When you are
 
 One way to help optimize your sprites is to store them in page blocks before importing. Let's look back at the earlier example of the Reaper Boy sprites. If we were to export the sprites from the Sprite Chip, we would end up with a 256 x 768 image: 
 
-<p style="text-align:center"><img src="images/SpriteMemoryPages_image_0.png" /></p>
+![image alt text](images/SpriteMemoryPages_image_0.png)
 
 Here you can see how each page of sprites is organized. Since the importer reads from the top left of the `sprite.png` to the right as it traverses each row of pixels, organizing your PNG file like this will help speed-up loading sprites at run-time.
 

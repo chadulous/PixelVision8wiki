@@ -73,6 +73,6 @@ In this example, we are going to calculate the size of the tilemap and display i
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/TilemapSizeOutput_image_0.png" /></p>
+![image alt text](images/TilemapSizeOutput_image_0.png)
 
 

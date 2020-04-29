@@ -1,6 +1,6 @@
 The `Flag()` API allows you to quickly access just the flag value of a tile. This is useful when trying to calculate collision on the tilemap. By default, you can call this method with just a `column `and `row `position to return the flag value at that tile. If you supply a new value, it will be overridden on the tile. Changing a tile's flag value does not force the tile to be redrawn to the tilemap cache. Flags can be set in Pixel Vision OS’s Tilemap Tool or manually at run-time.
 
-<p style="text-align:center"><img src="images/Flag_image_0.png" /></p>
+![image alt text](images/Flag_image_0.png)
 
 By default, Pixel Vision 8 has 16 flag values starting a `0` and ending at `15`. The Tilemap Editor uses icons for each flag value to make it easier to keep track of different flag types but the assigned value is arbitrary and can represent anything you want it to in your own game.
 
@@ -92,6 +92,6 @@ In this example, we are going to use the mouse position to find a tile and get i
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/FlagOutput_image_0.png" /></p>
+![image alt text](images/FlagOutput_image_0.png)
 
 

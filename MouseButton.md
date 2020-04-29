@@ -128,6 +128,6 @@ In this example, we will display if the mouse buttons are down:
 
 Running this code will output the following:
 
-## <p style="text-align:center"><img src="images/MouseButtonOutput_image_0.png" /></p>
+## ![image alt text](images/MouseButtonOutput_image_0.png)
 
 

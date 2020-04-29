@@ -47,6 +47,6 @@ In this example, we display the color per sprite value:
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ColorsPerSpriteOutput_image_0.png" /></p>
+![image alt text](images/ColorsPerSpriteOutput_image_0.png)
 
 

@@ -61,6 +61,6 @@ In this example, we are going to call the StopSong() API when the mouse button i
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/StopSongOutput_image_0.png" /></p>
+![image alt text](images/StopSongOutput_image_0.png)
 
 

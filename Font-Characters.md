@@ -58,7 +58,7 @@ Each font character in the `.font.png` file should match up to their ASCII value
   <tr>
     <td>37</td>
     <td>%</td>
-    <td>Procenttecken</td>
+    <td>Percent</td>
     <td></td>
     <td>85</td>
     <td>U</td>

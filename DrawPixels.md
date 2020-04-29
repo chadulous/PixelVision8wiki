@@ -138,7 +138,7 @@ In this example, we will take an array of color IDs and push them to the display
             DrawPixels(pixelData, 24, 32, 8, 8, false, true, DrawMode.TilemapCache);
             DrawPixels(pixelData, 32, 32, 8, 8, true, true, DrawMode.TilemapCache);
 
-            // Shfit the pixel data color IDs by 1
+            // Shift the pixel data color IDs by 1
             DrawPixels(pixelData, 40, 32, 8, 8, false, false, DrawMode.TilemapCache, 1);
 
         }
@@ -154,7 +154,7 @@ In this example, we will take an array of color IDs and push them to the display
             // You can simplify the call if you are not flipping the pixel data
             DrawPixels(pixelData, 8, 56, 8, 8);
 
-            // Fliping the pixel data on the sprite layer, which is used by default when not provided
+            // Flipping the pixel data on the sprite layer, which is used by default when not provided
             DrawPixels(pixelData, 16, 56, 8, 8, true, false);
             DrawPixels(pixelData, 24, 56, 8, 8, false, true);
             DrawPixels(pixelData, 32, 56, 8, 8, true, true);
@@ -178,6 +178,6 @@ In this example, we will take an array of color IDs and push them to the display
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawPixelsOutput_image_0.png" /></p>
+![image alt text](images/DrawPixelsOutput_image_0.png)
 
 

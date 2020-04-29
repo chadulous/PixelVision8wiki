@@ -39,6 +39,6 @@ In this example, we are going to draw some text to the tilemap and to the tilema
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/RebuildTilemapOutput_image_0.png" /></p>
+![image alt text](images/RebuildTilemapOutput_image_0.png)
 
 

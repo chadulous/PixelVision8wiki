@@ -40,6 +40,8 @@ Passing in a value such as `-1`, or one that is out of range will default to the
 
 In this example, we will display the default background color on the display, then change it, and redraw the new value below it:
 
+{% tab title="C#" %}
+
     class BackgroundColorExample : GameChip
     {
         public override void Init()
@@ -64,8 +66,9 @@ In this example, we will display the default background color on the display, th
         }
     }
 
+{% endtab %}
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/BackgroundColorOutput_image_0.png" /></p>
+![image alt text](images/BackgroundColorOutput_image_0.png)
 
 

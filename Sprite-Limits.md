@@ -2,7 +2,7 @@ Original 8-bit consoles had hard limits on the number of sprites they could disp
 
 For example, the original NES was only able to render 64 sprites at one time. This can be achieved by editing the `data.json` and modifying the `SpriteChip`’s `maxSpriteCount` property. 
 
-<p style="text-align:center"><img src="images/SpriteLimits_image_0.gif" /></p>
+![image alt text](images/SpriteLimits_image_0.gif)
 
 When your game has a sprite limitation, any additional draw calls will be ignored if the counter has reached its maximum value. In this example, there are 200 `DrawSprite()` requests happening during the `Draw()` loop, but only 64 of those are executed.
 

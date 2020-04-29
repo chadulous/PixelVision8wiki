@@ -234,6 +234,6 @@ In this example, we are going to iterate over all of the game’s metadata keys 
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ReadMetadataOutput_image_0.png" /></p>
+![image alt text](images/ReadMetadataOutput_image_0.png)
 
 

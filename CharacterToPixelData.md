@@ -88,6 +88,6 @@ In this example, we use the default `DrawText()` API to display an `A` on the sc
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/CharacterToPixelDataOutput_image_0.png" /></p>
+![image alt text](images/CharacterToPixelDataOutput_image_0.png)
 
 

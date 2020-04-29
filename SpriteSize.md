@@ -43,6 +43,6 @@ In this example, we are going to read the `SpriteSize()` API and display it on t
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/SpriteSizeOutput_image_0.png" /></p>
+![image alt text](images/SpriteSizeOutput_image_0.png)
 
 

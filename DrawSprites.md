@@ -130,7 +130,7 @@ Attempting to use an unsupported draw mode will cancel the draw request. When us
 
 For this example, we are going to render two groups of sprites to the display. The first group will hide when their `X` value goes past the screen and the second group will wrap when their Y value is offscreen similar to using the `DrawSprite()` API. To do this, we need to find all of the sprite IDs that make up the group by using Pixel Vision OS’s Sprite Tool.
 
-<p style="text-align:center"><img src="images/DrawSprites_image_0.png" /></p>
+![image alt text](images/DrawSprites_image_0.png)
 
 To calculate a sprite’s ID by hand, you can find the first sprite at the top left part of the `sprites.png` file. For empty sprites, we’ll use -1 for the ID so they don’t count against the sprite limit. Once we have all of the sprite IDs we can use the following code example to draw it:
 
@@ -185,11 +185,11 @@ To calculate a sprite’s ID by hand, you can find the first sprite at the top l
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawSpritesOutput_image_0.png" /></p>
+![image alt text](images/DrawSpritesOutput_image_0.png)
 
 While each sprite group is made up of `16 `sprites, only `12 `are rendered since the empty sprites are set to `-1`. When the horizontal sprite moves past the boundary of the screen, it will stop rendering even though the `X` value continues to increase. 
 
-<p style="text-align:center"><img src="images/DrawSpritesOutput_image_1.png" /></p>
+![image alt text](images/DrawSpritesOutput_image_1.png)
 
 You can also see that the sprites from the first group stop rendering when their `X` position goes offscreen since the `onScreen `argument is set to true by default.
 

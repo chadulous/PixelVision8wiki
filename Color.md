@@ -101,6 +101,6 @@ In this example, we are going to read the second color (ID `1`), draw a rectangl
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ColorOutput_image_0.png" /></p>
+![image alt text](images/ColorOutput_image_0.png)
 
 

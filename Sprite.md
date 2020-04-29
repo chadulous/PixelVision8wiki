@@ -45,7 +45,7 @@ It is important to make sure that any new pixel data should be the same length o
 
 In this example, we are going to use the `Sprite()` API to read and write new sprite data. To get started, we’ll fill the first sprite in with white, color ID `15`, and then fill the entire tilemap with that sprite.
 
-<p style="text-align:center"><img src="images/Sprite_image_0.png" /></p>
+![image alt text](images/Sprite_image_0.png)
 
 Next, we’ll create a timer to get the first sprite’s pixel data, randomize it, and save it back. Since the tilemap is filled with the first sprite, any changes will instantly be reflected on the display:
 
@@ -99,6 +99,6 @@ Next, we’ll create a timer to get the first sprite’s pixel data, randomize i
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/SpriteOutput_image_0.png" /></p>
+![image alt text](images/SpriteOutput_image_0.png)
 
 

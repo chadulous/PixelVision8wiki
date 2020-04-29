@@ -2,7 +2,7 @@ The color importer scans the PNG’s color data a pixel at a time, starting in t
 
 To create your `color.png` file by hand, simply make a single line of pixels or lay them out in a grid. Here is an example of how the color importer traverses a grid of pixels inside of a small 4x4 pixel `color.png` file:
 
-<p style="text-align:center"><img src="images/ImportingSystemColors_image_0.png" /></p>
+![image alt text](images/ImportingSystemColors_image_0.png)
 
 Any colors over the `maxColors `value in the `data.json` file will be ignored. The order of the colors in the PNG will match how they are stored in memory. Once you know their ID, you can reference them as needed in your game.
 

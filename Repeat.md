@@ -69,6 +69,6 @@ In this example, we will increase a counter by `1` on every frame and use `Repea
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/RepeatOutput_image_0.png" /></p>
+![image alt text](images/RepeatOutput_image_0.png)
 
 

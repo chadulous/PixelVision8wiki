@@ -77,6 +77,6 @@ In this example, we toggle between playing and stopping a sound effect based on 
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/StopSoundOutput_image_0.png" /></p>
+![image alt text](images/StopSoundOutput_image_0.png)
 
 

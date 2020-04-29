@@ -2,15 +2,15 @@ The `DisplayChip`’s `overscan `property tells the engine how many pixels to cr
 
 If no overscan value is set, the sprites will immediately wrap around the right and bottom edges of the screen. Let’s take a look at two turtle shells as they move horizontally and vertically towards the edge of the screen.  As you can see, Any pixel data that goes past the edge of the screen immediately wrap to the opposite side of the screen.
 
-<p style="text-align:center"><img src="images/Overscan_image_0.png" /></p>
+![image alt text](images/Overscan_image_0.png)
 
 We can use the overscan to hide sprites offscreen. Let’s say we change the overscan `X` and `Y` values to `1`. This will effectively give us an 8-pixel offscreen buffer on the right and bottom of the display. Here you can see the overscan area in black.
 
-<p style="text-align:center"><img src="images/Overscan_image_1.png" /></p>
+![image alt text](images/Overscan_image_1.png)
 
 The display will automatically remove the overscan area. If we look at the screen with the new overscan value, we’ll see that the turtle shell no longer appears on the right side of the screen when its `X` greater than `248 `pixels.
 
-<p style="text-align:center"><img src="images/Overscan_image_2.png" /></p>
+![image alt text](images/Overscan_image_2.png)
 
 When overscan is combined with the `DrawSprites()` API you can automatically handle hiding sprites offscreen by setting the `onScreen `argument to true. The DrawSprites() method will check to see which sprites are inside of the visible area and not render the ones outside of it. This allows you to account for sprite wrapping and you can use the overscan area to hide sprites offscreen.
 

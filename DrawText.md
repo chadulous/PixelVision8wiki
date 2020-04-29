@@ -1,6 +1,6 @@
 The` DrawText()` API allows you to render text to the display. Files ending with the `.font.png` extension are loaded by the `FontChip `and converted into character sprites. The `FontChip `stores these characters separately from `SpriteChip`’s own sprites. You can access the font by using it’s file name, without an extension, when drawing text to the display. While the `FontChip` stores each character as an 8 x 8 sprite, you can make still make smaller characters as long as each one fits inside of a single sprite. Font’s are laid out in a specific order to match up with each character’s ASCII value, starting at 32 for an empty space.
 
-<p style="text-align:center"><img src="images/DrawText_image_0.png" /></p>
+![image alt text](images/DrawText_image_0.png)
 
 Like all of the drawing APIs, you can render characters to different layers based on the draw mode. When drawing text as sprites, you have more flexibility over position, but each character counts against the display’s maximum sprite count. When rendering text to the tilemap, you are able to show more characters at one time and is more efficient when it comes to rendering large amounts of text. It’s also important to note that when drawing text as tiles, that `X` and `Y` values become `column` and `row`.
 
@@ -148,6 +148,6 @@ In this example, we text to the display using different draw modes:
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawTextOutput_image_0.png" /></p>
+![image alt text](images/DrawTextOutput_image_0.png)
 
 

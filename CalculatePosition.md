@@ -75,6 +75,6 @@ In this example, we will treat a 1D as a 2D array and convert an index into a `X
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/CalculatePositionOutput_image_0.png" /></p>
+![image alt text](images/CalculatePositionOutput_image_0.png)
 
 

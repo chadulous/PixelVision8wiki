@@ -122,6 +122,6 @@ In this example, we are going to create two rectangles and test to see if they c
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/NewRectOutput_image_0.png" /></p>
+![image alt text](images/NewRectOutput_image_0.png)
 
 

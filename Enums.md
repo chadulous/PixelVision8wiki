@@ -282,61 +282,61 @@ The Keys enum is used to detect keyboard button presses when calling Key(). Simp
     <td>103</td>
   </tr>
   <tr>
-    <td>Keys.Alpha0</td>
+    <td>Keys.D0</td>
     <td>48</td>
     <td>Keys.NumPad8</td>
     <td>104</td>
   </tr>
   <tr>
-    <td>Keys.Alpha1</td>
+    <td>Keys.D1</td>
     <td>49</td>
     <td>Keys.NumPad9</td>
     <td>105</td>
   </tr>
   <tr>
-    <td>Keys.Alpha2</td>
+    <td>Keys.D2</td>
     <td>50</td>
     <td>Keys.Multiply</td>
     <td>106</td>
   </tr>
   <tr>
-    <td>Keys.Alpha3</td>
+    <td>Keys.D3</td>
     <td>51</td>
     <td>Keys.Add</td>
     <td>107</td>
   </tr>
   <tr>
-    <td>Keys.Alpha4</td>
+    <td>Keys.D4</td>
     <td>52</td>
     <td>Keys.Separator</td>
     <td>108</td>
   </tr>
   <tr>
-    <td>Keys.Alpha5</td>
+    <td>Keys.D5</td>
     <td>53</td>
     <td>Keys.Subtract</td>
     <td>109</td>
   </tr>
   <tr>
-    <td>Keys.Alpha6</td>
+    <td>Keys.D6</td>
     <td>54</td>
     <td>Keys.Decimal</td>
     <td>110</td>
   </tr>
   <tr>
-    <td>Keys.Alpha7</td>
+    <td>Keys.D7</td>
     <td>55</td>
     <td>Keys.Divide</td>
     <td>111</td>
   </tr>
   <tr>
-    <td>Keys.Alpha8</td>
+    <td>Keys.D8</td>
     <td>56</td>
     <td>Keys.LeftShift</td>
     <td>160</td>
   </tr>
   <tr>
-    <td>Keys.Alpha9</td>
+    <td>Keys.D9</td>
     <td>57</td>
     <td>Keys.RightShift</td>
     <td>161</td>
@@ -368,73 +368,73 @@ The Keys enum is used to detect keyboard button presses when calling Key(). Simp
   <tr>
     <td>Keys.E</td>
     <td>69</td>
-    <td>Keys.Semicolon</td>
+    <td>Keys.OemSemicolon</td>
     <td>186</td>
   </tr>
   <tr>
     <td>Keys.F</td>
     <td>70</td>
-    <td>Keys.Plus</td>
+    <td>Keys.OemPlus</td>
     <td>187</td>
   </tr>
   <tr>
     <td>Keys.G</td>
     <td>71</td>
-    <td>Keys.Comma</td>
+    <td>Keys.OemComma</td>
     <td>188</td>
   </tr>
   <tr>
     <td>Keys.H</td>
     <td>72</td>
-    <td>Keys.Minus</td>
+    <td>Keys.OemMinus</td>
     <td>189</td>
   </tr>
   <tr>
     <td>Keys.I</td>
     <td>73</td>
-    <td>Keys.Period</td>
+    <td>Keys.OemPeriod</td>
     <td>190</td>
   </tr>
   <tr>
     <td>Keys.J</td>
     <td>74</td>
-    <td>Keys.Question</td>
+    <td>Keys.OemQuestion</td>
     <td>191</td>
   </tr>
   <tr>
     <td>Keys.K</td>
     <td>75</td>
-    <td>Keys.Tilde</td>
+    <td>Keys.OemTilde</td>
     <td>192</td>
   </tr>
   <tr>
     <td>Keys.L</td>
     <td>76</td>
-    <td>Keys.OpenBrackets</td>
+    <td>Keys.OemOpenBrackets</td>
     <td>219</td>
   </tr>
   <tr>
     <td>Keys.M</td>
     <td>77</td>
-    <td>Keys.Pipe</td>
+    <td>Keys.OemPipe</td>
     <td>220</td>
   </tr>
   <tr>
     <td>Keys.N</td>
     <td>78</td>
-    <td>Keys.CloseBrackets</td>
+    <td>Keys.OemCloseBrackets</td>
     <td>221</td>
   </tr>
   <tr>
     <td>Keys.O</td>
     <td>79</td>
-    <td>Keys.Quotes</td>
+    <td>Keys.OemQuotes</td>
     <td>222</td>
   </tr>
   <tr>
     <td>Keys.P</td>
     <td>80</td>
-    <td>Keys.Backslash</td>
+    <td>Keys.OemBackslash</td>
     <td>226</td>
   </tr>
   <tr>

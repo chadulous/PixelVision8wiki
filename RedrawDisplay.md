@@ -29,6 +29,6 @@ In this example, we’ll be using RedrawDisplay() to clear the screen and draw t
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/RedrawDisplayOutput_image_0.png" /></p>
+![image alt text](images/RedrawDisplayOutput_image_0.png)
 
 

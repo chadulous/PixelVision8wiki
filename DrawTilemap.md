@@ -53,7 +53,7 @@ Finally, the `DrawTilemap()` API doesn’t accept a draw mode since it’s hardc
 
 In this example, we are going to create two `DrawTilemap()` calls to display the tilemap. The first call will draw a static border on the top and the second call will display the tilemap as it scrolls. This is what the tilemap looks like:
 
-<p style="text-align:center"><img src="images/DrawTilemap_image_0.png" /></p>
+![image alt text](images/DrawTilemap_image_0.png)
 
 Since we continue to increase the `ScrollPosition()`’s `X` value, the tilemap will wrap around once it reaches the end. Since we are drawing the text as sprites over the tilemap, the characters will stay fixed on the screen since they are not using the `ScrollPosition()` value to draw their `X` and `Y` position:
 
@@ -100,6 +100,6 @@ Since we continue to increase the `ScrollPosition()`’s `X` value, the tilemap 
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawTilemapOutput_image_0.png" /></p>
+![image alt text](images/DrawTilemapOutput_image_0.png)
 
 

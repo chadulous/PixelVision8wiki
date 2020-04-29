@@ -4,7 +4,7 @@ Before you clone from Github, let’s talk about how the repo is structured, and
 
 Each tag is considered "stable" and will no longer get updated. The master branch will always represent the lastest stable codebase and is updated after each new version is released. That means you’ll need to do a pull to get updates after each release.
 
-<p style="text-align:center"><img src="images/CloningFromGithub_image_1.png" /></p>
+![image alt text](images/CloningFromGithub_image_1.png)
 
 Finally, for those looking for nightly builds or patches to bugs as they are closed, the branches offer the most up-to-date fixes. Simply find the latest version if you are looking for patches to issues recently closed.
 

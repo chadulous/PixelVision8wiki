@@ -125,6 +125,6 @@ In this example, we draw three rectangles to the display using different draw mo
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawRectOutput_image_0.png" /></p>
+![image alt text](images/DrawRectOutput_image_0.png)
 
 

@@ -6,15 +6,15 @@ There are some major API changes in this version that may impact reinstalling Pi
 
 ### Upgrading Pixel Vision OS
 
-**Issue**- If you have a previous version of Pixel Vision OS you’ll get an error after booting into the Workspace Tool. This has to do with the fact that the `ReadMetaData()` API has now been changed to `ReadMetadata()`. This will impact the logic that checks if the Explorer Tool should prompt the user to upgrade to the newer OS.
+**Issue **- If you have a previous version of Pixel Vision OS you’ll get an error after booting into the Workspace Tool. This has to do with the fact that the `ReadMetaData()` API has now been changed to `ReadMetadata()`. This will impact the logic that checks if the Explorer Tool should prompt the user to upgrade to the newer OS.
 
-**Fix**- Make sure to back up your entire Workspace, then boot up Pixel Vision 8 v0.9.7 while holding down the Shift key to enter safe mode. This will load up the OS Installer Tool. Check "clean install" then reinstall Pixel Vision OS. You’ll need to also reinstall your copy of the Pro Tools as well.
+**Fix **- Make sure to back up your entire Workspace, then boot up Pixel Vision 8 v0.9.7 while holding down the Shift key to enter safe mode. This will load up the OS Installer Tool. Check "clean install" then reinstall Pixel Vision OS. You’ll need to also reinstall your copy of the Pro Tools as well.
 
 ### Changes to Time Delta
 
 **Issue** - When you run your games in Pixel Vision 8 v0.9.7, you may notice the timing is off. The game’s `Update()` now returns `timeDelta` as an `int` instead of a float which was used in previous versions.
 
-**Fix**- If you are using the `timeDelta `in your game’s `Update()` function, add `timeDelta = timeDelta/1000` to the top of the `Update()` function which will convert the value back to a `float`. This should allow your game to run correctly until you have time to make the required adjustments to any `timeDelta `calculations.
+**Fix **- If you are using the `timeDelta `in your game’s `Update()` function, add `timeDelta = timeDelta/1000` to the top of the `Update()` function which will convert the value back to a `float`. This should allow your game to run correctly until you have time to make the required adjustments to any `timeDelta `calculations.
 
 ### API Changes
 
@@ -24,23 +24,22 @@ Here is a complete list of the API changes that are new in v0.9.7:
 
 * UpdateTiles API changed from:
 
-    `UpdateTiles(int column, int row, int columns, int[] ids, int? colorOffset = null, int? flag = null)`
+    UpdateTiles(int column, int row, int columns, int[] ids, int? colorOffset = null, int? flag = null)
 
 	to
 
-    `UpdateTiles(int[] ids, int? colorOffset = null, int? flag = null)`
+    UpdateTiles(int[] ids, int? colorOffset = null, int? flag = null)
 
-* `StopSound()` was added to the Lua APIs.
-* `SpriteSize()` no longer accepts a width and height parameter since changing sprite sizes wasn’t supported reviously.
-* Removed `Sprites()` API.
-* Changed `DumpMetaData()` to  `ReadAllMetadata()` API
-* Changed `ReadMetaData()` and `WriteMetaData()` to `ReadMetadata()` and `WriteMetadata()` respectively.
-* Added `IsChannelPlaying()` to Lua API
-* Remove `drawMode` parameter from `DrawTilemap()`. It now automatically selected the correct `drawMode` by default.
-* Changed `ConvertCharacterToPixelData()` to `CharacterToPixelData()`
-* Removed `PlayPattern()` and `PlayPatterns() `from the API.
-
-## Latest Fixes
+`StopSound()` was added to the Lua APIs.
+`SpriteSize()` no longer accepts a width and height parameter since changing sprite sizes wasn’t supported previously.
+Removed `Sprites()` API.
+Changed `DumpMetaData()` to  `ReadAllMetadata()` API
+Changed `ReadMetaData()` and `WriteMetaData()` to `ReadMetadata()` and `WriteMetadata()` respectively.
+Added `IsChannelPlaying()` to Lua API
+Remove `drawMode` parameter from `DrawTilemap()`. It now automatically selected the correct `drawMode` by default.
+Changed `ConvertCharacterToPixelData()` to `CharacterToPixelData()`
+Removed `PlayPattern()` and `PlayPatterns() `from the API.
+Latest Fixes
 This is currently a beta release of Pixel Vision 8. You can now log bugs specific to Pixel Vision OS [here](https://github.com/PixelVision8/PixelVisionOS/issues) or to the core MonoGame Runner [here](https://github.com/PixelVision8/MonoGameRunner/issues). There is also a dedicated [Discord Server](https://discord.gg/pixelvision8) for community, help, and sharing work. Below are the issues that have been addressed in this release:
 
 ### SDK (v1.9.7)
@@ -49,7 +48,7 @@ This is currently a beta release of Pixel Vision 8. You can now log bugs specifi
 
 * [Changing UpdateTiles to work with tileIDs, color offsets and flags values](https://github.com/PixelVision8/PixelVisionRunner/issues/90)
 
-* [Changing TotalSprites API to default to false](https://github.com/PixelVision8/PixelVisionRunner/issues/89)
+* [Changing TotalSprites API to default to false](https://github.com/PixelVision8/PixelVisionRunner/issues/89) 
 
 * [Add StopSound to the Lua API](https://github.com/PixelVision8/PixelVisionRunner/issues/87)
 
@@ -78,3 +77,5 @@ This is currently a beta release of Pixel Vision 8. You can now log bugs specifi
 * [Text draw calls are not capped by sprite draw limit](https://github.com/PixelVision8/PixelVisionRunner/issues/68)
 
 * [Need to escape linux launch path](https://github.com/PixelVision8/PixelVisionRunner/issues/49)
+
+

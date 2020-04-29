@@ -45,7 +45,7 @@ It’s important that some of the drawing APIs like `DrawSpriteBlock()` and `Dra
 
 In this example, we are going to scroll the tilemap and stop it before it when it reaches the end. This is what the tilemap looks like:
 
-<p style="text-align:center"><img src="images/ScrollPosition_image_0.png" /></p>
+![image alt text](images/ScrollPosition_image_0.png)
 
 On top of the tilemap will be two sprites, one at a fixed position and the second that scrolls with the tilemap:
 
@@ -110,6 +110,6 @@ On top of the tilemap will be two sprites, one at a fixed position and the secon
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ScrollPositionOutput_image_0.png" /></p>
+![image alt text](images/ScrollPositionOutput_image_0.png)
 
 

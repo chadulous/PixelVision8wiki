@@ -265,6 +265,6 @@ In this example, we’ll read a sound’s properties, modify the `waveType`, the
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/SoundOutput_image_0.png" /></p>
+![image alt text](images/SoundOutput_image_0.png)
 
 

@@ -106,7 +106,7 @@ Attempting to use an unsupported draw mode will cancel the draw request. When us
 
 For this example, we are going to render a sprite to the display. To do this, we need the sprite’s ID which you can find in Pixel Vision OS’s Sprite Tool.
 
-<p style="text-align:center"><img src="images/DrawSprite_image_0.png" /></p>
+![image alt text](images/DrawSprite_image_0.png)
 
 To calculate a sprite’s ID by hand, you can find the first sprite at the top left part of the `sprites.png` file. Once we have the sprite’s ID we can use the following code example to draw it:
 
@@ -149,6 +149,6 @@ To calculate a sprite’s ID by hand, you can find the first sprite at the top l
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawSpriteOutput_image_0.png" /></p>
+![image alt text](images/DrawSpriteOutput_image_0.png)
 
 

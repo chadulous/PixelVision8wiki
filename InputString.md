@@ -63,6 +63,6 @@ In this example, we are going to capture any text typed and display it on the sc
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/InputStringOutput_image_0.png" /></p>
+![image alt text](images/InputStringOutput_image_0.png)
 
 

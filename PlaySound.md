@@ -76,6 +76,6 @@ In this example, we’ll play a sound effect on channel 0 when the mouse is pres
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/PlaySoundOutput_image_0.png" /></p>
+![image alt text](images/PlaySoundOutput_image_0.png)
 
 

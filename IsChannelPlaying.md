@@ -82,6 +82,6 @@ In this example, we are going to play two different sound effects on their own c
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/IsChannelPlayingOutput_image_0.png" /></p>
+![image alt text](images/IsChannelPlayingOutput_image_0.png)
 
 

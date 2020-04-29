@@ -1,6 +1,6 @@
 The `DrawSpriteBlock()` API allows you to draw multiple sprites to the screen in a single call. This works similar to `DrawSprite(),` except you define the first sprite (upper left corner) then the `width `and `height `(in sprites) to sample from `SpriteChip`’s memory. For example, if you passed in an ID of 0 which is the first sprite, then a  `width `and `height `of `2` the `DrawSpriteBlock()` API would combine all 4 sprites into a single draw call.
 
-<p style="text-align:center"><img src="images/DrawSpriteBlock_image_0.png" /></p>
+![image alt text](images/DrawSpriteBlock_image_0.png)
 
 The `DrawSpriteBlock()` API also supports flipping the sprite and color offsets like `DrawSprite()` but adds some additional arguments to help make it easier to work with multiple sprites as a single sprite.
 
@@ -135,7 +135,7 @@ Attempting to use an unsupported draw mode will cancel the draw request. When us
 
 For this example, we are going to render two blocks of sprites to the display. The first group will hide when their `X` value goes past the screen and the second group will wrap when their Y value is offscreen similar to using the `DrawSprite()` API. To do this, we need the first sprite’s ID which you can find by using Pixel Vision OS’s Sprite Tool.
 
-<p style="text-align:center"><img src="images/DrawSpriteBlock_image_1.png" /></p>
+![image alt text](images/DrawSpriteBlock_image_1.png)
 
 To help get an idea of what the sprite will look like, we can use the Sprite Tool’s size button to increase or decrease the sprites displayed on the canvas. To calculate a sprite’s ID by hand, you can find the first sprite at the top left part of the `sprites.png` file. Once we have the sprite’s ID we can use the following code example to draw it:
 
@@ -179,10 +179,10 @@ To help get an idea of what the sprite will look like, we can use the Sprite Too
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DrawSpriteBlockOutput_image_0.png" /></p>
+![image alt text](images/DrawSpriteBlockOutput_image_0.png)
 
 When the horizontal sprite moves past the boundary of the screen, it will stop rendering even though the `X` value continues to increase. 
 
-<p style="text-align:center"><img src="images/DrawSpriteBlockOutput_image_1.png" /></p>
+![image alt text](images/DrawSpriteBlockOutput_image_1.png)
 
 

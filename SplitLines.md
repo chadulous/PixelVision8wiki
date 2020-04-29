@@ -68,6 +68,6 @@ In this example, we are going to use the `SplitLines()` API to create an array o
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/SplitLinesOutput_image_0.png" /></p>
+![image alt text](images/SplitLinesOutput_image_0.png)
 
 

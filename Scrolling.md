@@ -6,15 +6,15 @@ For example. If the game’s resolution is 160 x 144 and our tilemap is `288` x 
 
 As the map’s scroll position changes, only the visible area is rendered to the display. Here you can see what will be drawn to the screen out of the entire tilemap.
 
-<p style="text-align:center"><img src="images/Scrolling_image_0.png" /></p>
+![image alt text](images/Scrolling_image_0.png)
 
 Tilemaps will repeat as you scroll horizontally or vertically. So if the viewpoint goes past the edge of the tilemap, it will sample tilemap pixel data from the opposite side. In this example, we set the same tilemap scroll position to `184` the tilemap will sample from the right edge and left edge of the tilemap.
 
-<p style="text-align:center"><img src="images/Scrolling_image_1.png" /></p>
+![image alt text](images/Scrolling_image_1.png)
 
 In the game, you’ll see the following tilemap.
 
-<p style="text-align:center"><img src="images/Scrolling_image_2.png" /></p>
+![image alt text](images/Scrolling_image_2.png)
 
 You can use this to your advantage by designing tilemaps that can wrap or you’ll need to manually limit the scroll position before it hits the edge of the tilemap. This the above example, we’d want to make sure that the scroll position `X` value is greater than `0` and less than `128` so it doesn’t go bast the left or right boundaries.
 
@@ -36,11 +36,11 @@ Take a look at the following code which represents the full Dr`awSpriteBlock()` 
 
 As you can see, we are changing the `onScreen` flag to `false` and change the scroll position `X` value to `90`, the treasure chest will now wrap around the screen.
 
-<p style="text-align:center"><img src="images/Scrolling_image_4.png" /></p>
+![image alt text](images/Scrolling_image_4.png)
 
 If we change the value of the `onScreen` argument back to `true`, the chest would stop rendering when its sprites are offscreen like so.
 
-<p style="text-align:center"><img src="images/Scrolling_image_5.png" /></p>
+![image alt text](images/Scrolling_image_5.png)
 
 The `useScrollPosition` argument defines if the sprites will use the scroll position or not. By default, the scroll position `X` and `Y` values will be added to each of the sprites as they are rendered to the display. If we set this to false, we can manually move the sprite in defiantly of the scrolling background like so.
 
@@ -48,15 +48,15 @@ The `useScrollPosition` argument defines if the sprites will use the scroll posi
 
 This will use the screen’s coordinate space to render the sprite. Now it is no longer to the left of the path and sits towards the middle of the screen, in essence, over the entire tilemap regardless of what the scroll position offset is.
 
-<p style="text-align:center"><img src="images/Scrolling_image_6.png" /></p>
+![image alt text](images/Scrolling_image_6.png)
 
 In this example, we are setting the `onScreen` value to true. If we moved the chest’s `X` position to `155`, it would render half off the screen.
 
-<p style="text-align:center"><img src="images/Scrolling_image_7.png" /></p>
+![image alt text](images/Scrolling_image_7.png)
 
 Finally, if we set the `onScreen` and `useScrollPosition` to false, the chest will wrap around the screen.
 
-<p style="text-align:center"><img src="images/Scrolling_image_8.png" /></p>
+![image alt text](images/Scrolling_image_8.png)
 
 These advanced concepts may not be clear at first but image you want to make a side-scrolling platformer. You will want to render the player on the screen independent of the scrolling so you’d set the useScrollPosition to false. If you have enemies on the map, you want them to move with the map as it scrolls but only renders when they are inside of the viewport. So they will have onScreen set to true and useScrollPosition set to true, which are the default values. Now as the player moves forward or backward, they stay centered on the screen, you change the scroll position accordingly and then enemies show up only when they are visible.
 

@@ -56,6 +56,6 @@ In this example, we are going to toggle playing and pausing a song by pressing t
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/PauseSongOutput_image_0.png" /></p>
+![image alt text](images/PauseSongOutput_image_0.png)
 
 

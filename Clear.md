@@ -112,6 +112,6 @@ In this example, we are going to use a simple time to toggle between clearing th
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ClearOutput_image_0.png" /></p>
+![image alt text](images/ClearOutput_image_0.png)
 
 

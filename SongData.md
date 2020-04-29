@@ -96,6 +96,6 @@ In this example, we are going to automatically play a song when the game loads u
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/SongDataOutput_image_0.png" /></p>
+![image alt text](images/SongDataOutput_image_0.png)
 
 

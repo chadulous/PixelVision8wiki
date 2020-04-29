@@ -73,6 +73,6 @@ In this example, we are going to use the `WordWrap()` API to create an array of 
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/WordWrapOutput_image_0.png" /></p>
+![image alt text](images/WordWrapOutput_image_0.png)
 
 

@@ -208,6 +208,6 @@ In this example, we are going to look at how to draw a line, a circle, and a squ
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/NewCanvasOutput_image_0.png" /></p>
+![image alt text](images/NewCanvasOutput_image_0.png)
 
 

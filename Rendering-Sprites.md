@@ -6,7 +6,7 @@ For example, let’s draw a sprite to the display with the following code.
 
 Here is what you’d see on the screen.
 
-<p style="text-align:center"><img src="images/RenderingSprites_image_0.png" /></p>
+![image alt text](images/RenderingSprites_image_0.png)
 
 We can flip the sprite by passing in a boolean for the `flipH `and `flipV `arguments.
 
@@ -14,7 +14,7 @@ We can flip the sprite by passing in a boolean for the `flipH `and `flipV `argum
 
 This will flip the sprite like so.
 
-<p style="text-align:center"><img src="images/RenderingSprites_image_1.png" /></p>
+![image alt text](images/RenderingSprites_image_1.png)
 
 We can also define which layer the sprite renders to via the draw mode argument. This accepts a DrawMode enum. By default, all sprites are drawn to the sprite layer. But, you can also draw sprites to the background behind the tilemap like so.
 
@@ -22,7 +22,7 @@ We can also define which layer the sprite renders to via the draw mode argument.
 
 In this example, we’ll use some clouds to illustrate some tiles on the tilemap layer and how the sprite will now render behind it.
 
-<p style="text-align:center"><img src="images/RenderingSprites_image_2.png" /></p>
+![image alt text](images/RenderingSprites_image_2.png)
 
 It’s important to keep in mind that games will have a limit to the number of sprites they can draw in a single frame. While you can combine sprites to make larger graphics on the screen, each draw call to the `Sprite `or `SpriteBelow `later will reduce the number of sprites on the display during this render cycle.
 

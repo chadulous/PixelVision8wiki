@@ -1,14 +1,14 @@
 Pixel Vision 8 doesn’t have a built-in palette mode. Instead, there is an ability to shift the color ID of a sprite by an offset value before it is drawn to the display. You can use this to simulate palette swapping in your own game based on how you organize the system colors. This means you will need to calculate the color offset by hand and supply it when drawing sprites to the screen. Let’s take a look at how this actually works in code. We’ll start with a grey-scale sprite that uses a color-map.png file to map the default system colors.
 
-<p style="text-align:center"><img src="images/PaletteColorOffset_image_0.png" /></p>
+![image alt text](images/PaletteColorOffset_image_0.png)
 
 All of the DrawAPIs have an optional color offset argument. By default, this value is set to 0. If we were to draw this sprite to the display, it would map directly to the system colors in the order of each grey value in the color-map.png file.
 
-<p style="text-align:center"><img src="images/PaletteColorOffset_image_1.png" /></p>
+![image alt text](images/PaletteColorOffset_image_1.png)
 
 If you change the color offset value, it will be added to all of the color IDs that make up a sprite’s pixel data. For example, if you have a sprite that uses the first color, it’s pixel data will be 0. If you pass in 5 for the color offset, all of the sprite’s color IDs will shift over to 5. Once you understand the basics, there are a few advanced ways you can use this.
 
-<p style="text-align:center"><img src="images/PaletteColorOffset_image_2.png" /></p>
+![image alt text](images/PaletteColorOffset_image_2.png)
 
 When it comes to palettes, the Color Tool will split the color memory in half. The first 128 colors will be reserved for system colors and the other 128 colors are for palettes. When this is used with a color-map.png file, the sprite’s colors are matched up with the color-map.png instead of the system colors instead of how to direct color mode works. It’s important to note that the color-map.png file contains 16 colors starting a 0 and ending at 15. If you do not change the color offset of your sprites, they will display the first 16 system colors.
 
@@ -18,7 +18,7 @@ If you want to remap the sprites to the first palette, you can pass in 127 as th
 
 In this example, a palette has been set up to re-color the flower. Supplying the first palette offset value will shift all of the colors over to the intended values.
 
-<p style="text-align:center"><img src="images/PaletteColorOffset_image_3.png" /></p>
+![image alt text](images/PaletteColorOffset_image_3.png)
 
 If you wanted to use the second palette, just change the value to 1:
 
@@ -26,7 +26,7 @@ If you wanted to use the second palette, just change the value to 1:
 
 Shifting the colors to the second palette will recolor the stem since that palette has a new color where the green was in the previous palette.
 
-<p style="text-align:center"><img src="images/PaletteColorOffset_image_4.png" /></p>
+![image alt text](images/PaletteColorOffset_image_4.png)
 
 You can also use the `PaletteOffset()` API to find a specific color ID inside of a palette. Let’s say you want to change the 2nd color of the first palette, you can calculate it’s ID by doing the following:
 
@@ -36,7 +36,7 @@ Again, remember that all colors are zero-based so you’ll want to account for t
 
 Here is an example of how the color.png file was set up to achieve this color swapping effect.
 
-<p style="text-align:center"><img src="images/PaletteColorOffset_image_5.png" /></p>
+![image alt text](images/PaletteColorOffset_image_5.png)
 
 You can see all of the palette colors at the bottom half of the color.png file. While you can set these up by hand, it’s best to use Pixel Vision 8’s Color Tool in Palette Mode.
 

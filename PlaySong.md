@@ -92,6 +92,6 @@ In this example, we are going to play a song when the mouse button is released a
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/PlaySongOutput_image_0.png" /></p>
+![image alt text](images/PlaySongOutput_image_0.png)
 
 

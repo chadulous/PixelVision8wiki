@@ -2,7 +2,7 @@ There are two ways to import tilemaps into your game. The easiest way is to prov
 
 By default, Pixel Vision 8 as a resolution of 256 x 240 pixels, which equates to 32 sprites horizontally and 30 sprites vertically. This means you can display a total of 960 sprites on the screen at one time. Here is an example `tilemap.png`:
 
-<p style="text-align:center"><img src="images/ParsingTilemapData_image_0.png" /></p>
+![image alt text](images/ParsingTilemapData_image_0.png)
 
 The tilemap can actually be larger than the visible screen. However, there are limits on the number of columns and rows some games can store in memory. These limitations are stored in the `TilemapChip`. Make sure to pay attention to those dimensions when creating new games. Tilemaps can be any size within those boundaries. Tilemap data can also be set at run-time to allow you to display larger maps than memory can store.
 

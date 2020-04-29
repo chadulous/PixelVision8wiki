@@ -77,6 +77,6 @@ In this example, we will display the maximum number of sprites and attempt to dr
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/MaxSpriteCountOutput_image_0.png" /></p>
+![image alt text](images/MaxSpriteCountOutput_image_0.png)
 
 

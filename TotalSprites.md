@@ -60,6 +60,6 @@ In this example, we are going to display the total sprite values:
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/TotalSpritesOutput_image_0.png" /></p>
+![image alt text](images/TotalSpritesOutput_image_0.png)
 
 

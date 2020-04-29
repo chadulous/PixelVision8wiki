@@ -2,7 +2,7 @@ Pixel Vision 8’s window is considered the screen. If the game is running in fu
 
 All games, no matter what their resolution is set to in the `data.json` file, will be upscaled to fill Pixel Vision 8’s screen. If the game is scaled up, it will be done in a way that preserves square pixels to avoid distorting or stretching. That means if your game’s resolution is set to `160 `x `144`, which is the native resolution of a Game Boy, black bars appear at the top and bottom of the screen.
 
-<p style="text-align:center"><img src="images/TheScreen_image_0.png" /></p>
+![image alt text](images/TheScreen_image_0.png)
 
 It’s important to note that the game is still being rendered at 160 x 144, even though it will appear larger as it’s upscaled to fill the screen. The screen and the game’s resolution are independent. Changing the game’s resolution will not be perfectly reflected since the game will automatically be upscaled to fill the screen.
 

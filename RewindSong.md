@@ -86,6 +86,6 @@ In this example, we’ll play the first song on a loop and when the left mouse b
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/RewindSongOutput_image_0.png" /></p>
+![image alt text](images/RewindSongOutput_image_0.png)
 
 

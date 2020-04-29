@@ -84,6 +84,6 @@ In this example, we get the full size of the display and the visible size. The v
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/DisplayOutput_image_0.png" /></p>
+![image alt text](images/DisplayOutput_image_0.png)
 
 

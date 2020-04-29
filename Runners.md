@@ -14,7 +14,7 @@ A Pixel Vision 8 Runner is any code wrapper that bridges the gap between the cor
 
 Pixel Vision 8 Runners are relatively easy to build with Visual Studio or Rider. Once you’ve cloned or downloaded the repo, you’ll find two Runner solutions.
 
-<p style="text-align:center"><img src="images/Runners_image_0.png" /></p>
+![image alt text](images/Runners_image_0.png)
 
 The `MonoGameRunner.sln` solution will launch a project with a simple C# and Lua Runner on top of MonoGame. The `PixelVision8Runner.sln` solution will launch a project with two Pixel Vision 8 branded runners using a custom build of MonoGame called MonoVision. The MonoGame Runner will boot directly into a game while the Pixel Vision 8 Runner contains a full file system and can be used to run Pixel Vision OS.
 

@@ -109,6 +109,6 @@ In this example, we will calculate the distance between 2 points and use a canva
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/CalculateDistanceOutput_image_0.png" /></p>
+![image alt text](images/CalculateDistanceOutput_image_0.png)
 
 

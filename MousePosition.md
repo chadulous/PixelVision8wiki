@@ -68,6 +68,6 @@ In this example, we will display the mouse position and draw an 8 x 8 pixel rect
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/MousePositionOutput_image_0.png" /></p>
+![image alt text](images/MousePositionOutput_image_0.png)
 
 

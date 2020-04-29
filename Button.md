@@ -169,6 +169,6 @@ In this example, we will loop through all of the buttons on controller 1 and dis
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/ButtonOutput_image_0.png" /></p>
+![image alt text](images/ButtonOutput_image_0.png)
 
 

@@ -44,17 +44,17 @@ The `UpdateTiles()` API allows you to update the color offset and flag values of
 
 In this example, we are going to read all of the tiles and see which ones have sprites assigned to them. We’ll be using the following Tilemap:
 
-<p style="text-align:center"><img src="images/UpdateTiles_image_0.png" /></p>
+![image alt text](images/UpdateTiles_image_0.png)
 
 Next, we’ll set up 4 palettes to apply to each of these tiles:
 
-<p style="text-align:center"><img src="images/UpdateTiles_image_1.png" /></p>
+![image alt text](images/UpdateTiles_image_1.png)
 
-<p style="text-align:center"><img src="images/UpdateTiles_image_2.png" /></p>
+![image alt text](images/UpdateTiles_image_2.png)
 
-<p style="text-align:center"><img src="images/UpdateTiles_image_3.png" /></p>
+![image alt text](images/UpdateTiles_image_3.png)
 
-<p style="text-align:center"><img src="images/UpdateTiles_image_4.png" /></p>
+![image alt text](images/UpdateTiles_image_4.png)
 
 Finally, we’ll change each tile’s `colorOffset` value over several frames to give the impression that the background is fading up and down:
 
@@ -153,6 +153,6 @@ One thing to note is that while this demo shows how to modify individual tiles a
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/UpdateTilesOutput_image_0.png" /></p>
+![image alt text](images/UpdateTilesOutput_image_0.png)
 
 

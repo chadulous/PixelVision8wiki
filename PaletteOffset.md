@@ -1,6 +1,6 @@
 The `PaletteOffset()` API allows you to easily calculate the color ID index when using palette mode in the Pixel Vision OS Color Tool. When switching to palette mode, the `ColorChip`’s memory is split into 128 system colors and 128 palette colors. Palettes start as ID `127`. Each palette can contain a maximum of 16 colors which ends up giving you 8 palettes to work with.
 
-<p style="text-align:center"><img src="images/PaletteOffset_image_0.png" /></p>
+![image alt text](images/PaletteOffset_image_0.png)
 
 By calling the `PaletteOffset()` API, it will convert a palette ID into the correct color ID for you. When used in the place of any of the drawing API’s `colorOffset` arguments, you can easily shift between any of the 8 palettes during run-time. There is an optional argument to supply a `paletteColorID` which gives you the color ID for a specific position inside of the palette.
 
@@ -47,15 +47,15 @@ By calling the `PaletteOffset()` API, it will convert a palette ID into the corr
 
 In this example, we are going to increase and decrease the palette ID value to give the effect that the sprites are fading into the background. To do this, we need to set up several palettes in the Color Tool to create the effect:
 
-<p style="text-align:center"><img src="images/PaletteOffset_image_1.png" /></p>
+![image alt text](images/PaletteOffset_image_1.png)
 
-<p style="text-align:center"><img src="images/PaletteOffset_image_2.png" /></p>
+![image alt text](images/PaletteOffset_image_2.png)
 
-<p style="text-align:center"><img src="images/PaletteOffset_image_3.png" /></p>
+![image alt text](images/PaletteOffset_image_3.png)
 
-<p style="text-align:center"><img src="images/PaletteOffset_image_4.png" /></p>
+![image alt text](images/PaletteOffset_image_4.png)
 
-<p style="text-align:center"><img src="images/PaletteOffset_image_5.png" /></p>.
+![image alt text](images/PaletteOffset_image_5.png)
 
 With the palettes created, we can shift between them by calling `PaletteOffset()` to calculate the correct color ID to use for the color offset:
 
@@ -122,6 +122,6 @@ With the palettes created, we can shift between them by calling `PaletteOffset()
 
 Running this code will output the following:
 
-<p style="text-align:center"><img src="images/PaletteOffsetOutput_image_0.png" /></p>
+![image alt text](images/PaletteOffsetOutput_image_0.png)
 
 
