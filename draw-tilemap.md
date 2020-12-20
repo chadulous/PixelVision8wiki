@@ -1,5 +1,3 @@
-# DrawTilemap()
-
 By default, the tilemap renders to the display by simply calling `DrawTilemap()`. This automatically fills the entire display with the visible portion of the tilemap. To have need more granular control for drawing the tilemap, you can supply an optional `X` and `Y` position to change where it draws on the screen. You can also modify the `width` (columns) and `height `(rows) that are displayed too. This is useful if you want to show a HUD or some other kind of image on the screen that is not overridden by the tilemap. 
 
 The `DrawTilemap() `API automatically uses the scroll position to offset where to start drawing the tilemap to the display. By default, a scroll position of `0`,`0` would be the top left corner of the tilemap. When you call `ScrollPosition()` and change the value, it will move the sample area to the new position of the tilemap. You can override this by supplying an optional `offsetX `and `offsetY `value. For example, if you want to render a HUD at the top of the screen with a scroll position `X` value of `100`, you’d pass `0` in for the `offsetX `value to reset the sampling area.

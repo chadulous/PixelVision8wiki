@@ -1,5 +1,3 @@
-# Quickstart Guide
-
 This quick start guide is designed to get you up and running with Pixel Vision 8. It covers everything you need to know about launching Pixel Vision 8. Once you've had a chance to review the information presented here, you'll be ready to start making your own Pixel Vision 8 games.
 
 

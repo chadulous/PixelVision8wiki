@@ -1,5 +1,3 @@
-# SFX Tool
-
 
 The SFX Tool allows you to create sound effects for your game and instruments to be used in the Music Tool. At a high level, the SFX Tool is optimized to make sound effects for your games as easy as possible by offering templates to streamline the creation of sound assets. Here is what the tool looks like:
 

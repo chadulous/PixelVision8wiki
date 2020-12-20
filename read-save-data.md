@@ -1,5 +1,3 @@
-# ReadSaveData()
-
 The `ReadSaveData()` API allows you to read saved data by supplying a key. If no matching key exists, "`undefined`" is returned.
 
 ## Usage

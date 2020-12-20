@@ -1,5 +1,3 @@
-# Music Tool
-
 The Music Tool allows you to create music from scratch, edit existing songs, and can also generate random music to help get you started. This is what you are presented with when loading up a `music.json` file.
 
 ![image alt text](images/MusicTool_image_0.png)

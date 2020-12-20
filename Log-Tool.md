@@ -1,5 +1,3 @@
-# Log Tool
-
 Pixel Vision OS includes a basic tool for viewing Pixel Vision 8’s log file. This file is maintained and updated while Pixel Vision 8 is running. 
 
 ![image alt text](images/LogTool_image_0.png)

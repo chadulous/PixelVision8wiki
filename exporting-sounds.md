@@ -1,5 +1,3 @@
-# Exporting Sound Effects
-
 The Sound Tool allows you to export individual sound effects as WAV files. You can do this by going into the Sound Tool and selecting an export option from the drop-down menu.
 
 ![image alt text](images/ExportingSoundEffects_image_0.png)

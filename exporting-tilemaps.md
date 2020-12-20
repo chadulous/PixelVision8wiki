@@ -1,5 +1,3 @@
-# Exporting Tilemaps
-
 If you are working on a tilemap in the Tilemap Tool but want to save a png file, you can select the Export PNG option from the drop-down menu.
 
 ![image alt text](images/ExportingTilemaps_image_0.png)

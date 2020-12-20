@@ -1,5 +1,3 @@
-# PaletteOffset()
-
 The `PaletteOffset()` API allows you to easily calculate the color ID index when using palette mode in the Pixel Vision OS Color Tool. When switching to palette mode, the `ColorChip`’s memory is split into 128 system colors and 128 palette colors. Palettes start as ID `127`. Each palette can contain a maximum of 16 colors which ends up giving you 8 palettes to work with.
 
 ![image alt text](images/PaletteOffset_image_0.png)

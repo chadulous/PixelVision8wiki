@@ -1,5 +1,3 @@
-# API Cheat Sheet
-
 Pixel Vision 8 exposes a set of APIs through the `GameChip` that allows you to create your own games with. The `GameChip` helps tie together all of the chips to create a single entry point when building a game. These APIs are broken up into several groups revolving around input, rendering, audio, and file parsing. These APIs are available in both the C# and Lua implementations of Pixel Vision 8 allowing for porting between either language to be easier. That means if you prefer to sketch out a game in Lua, you can eventually port it to C# for better performance and access to lower level .net functionality as the scope of your game grows over time.
 
 Below is a cheat sheet of the most common APIs used to make PV8 games.

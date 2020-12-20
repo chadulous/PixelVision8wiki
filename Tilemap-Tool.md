@@ -1,5 +1,3 @@
-# Tilemap Tool
-
 The Pixel Vision 8 has a built-in tilemap editor which is designed to help you build levels, splash screens, and backgrounds for your games.
 
 ![image alt text](images/TilemapTool_image_0.png)

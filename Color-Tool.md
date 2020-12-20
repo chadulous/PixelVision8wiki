@@ -1,5 +1,3 @@
-# Color Tool
-
 Pixel Vision OS has a built-in Color Tool to make previewing and editing system colors easier. You can use the Color Tool to also create individual palettes for swapping at run-time.
 
 ![image alt text](images/ColorTool_image_0.png)

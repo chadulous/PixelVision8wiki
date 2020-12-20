@@ -1,5 +1,3 @@
-# Sprite Tool
-
 The Sprite Editor Tool allows you to preview and edit sprites in memory. This tool is critical to see all of the sprites that are imported into the game and verifying that they are displayed correctly. Let's take a look at the Sprite Editor Tool's default layout.
 
 ![image alt text](images/SpriteTool_image_0.png)

@@ -1,5 +1,3 @@
-# CalculatePosition()
-
 Converts an index value into a point with an `X` and `Y` value to help when working with 1D arrays that represent 2D data.
 
 ## Usage

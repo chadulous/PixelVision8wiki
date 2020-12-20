@@ -1,5 +1,3 @@
-# NewPoint()
-
 A `Point `is a Pixel Vision 8 primitive used for defining an `X` and `Y` position on the display. The NewPoint() API creates a new instance for you. It’s important to keep in mind that point only stores integers for the `X` and `Y` value. 
 
 ## Usage

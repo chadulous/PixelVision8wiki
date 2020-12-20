@@ -1,5 +1,3 @@
-# Clear()
-
 Clearing the display removes all of the existing pixel data, replacing it with the default background color. The `Clear()` API allows you to specify what region of the display to clear. By calling` Clear()`, with no arguments, it automatically clears the entire display. You can manually define an area of the screen to clear by supplying optional `x`, `y`, `width`, and `height` argument values. 
 
 When clearing a specific area of the display, anything outside of the defined boundaries remains on the next draw phase. This is useful for drawing a HUD but clearing the display below for a scrolling map and sprites. The `Clear()` can only be used once during the draw phase.

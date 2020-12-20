@@ -1,5 +1,3 @@
-# UpdateTiles()
-
 The `UpdateTiles()` API allows you to update the color offset and flag values of multiple tiles at once. Simply supply an array of tile IDs and the new tile’s color offset and a flag value. This helper method uses the `Tile()` API under the hood to update each tile, so any changes to a tile’s color offset will automatically force it to be redrawn to the tilemap cache layer. Use this when you don’t need to make changes to each tile’s sprite ID and don’t want to manually iterate over large collections of tiles manually.
 
 ## Usage

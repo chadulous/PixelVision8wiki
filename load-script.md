@@ -1,5 +1,3 @@
-# LoadScript()
-
 The `LoadScript()` API allows you to parse a new Lua script at runtime from memory. You can use the` AddScript()` API to manually load text into memory or add additional Lua files to your game project. Also, any Lua files located in a `System/Libs/` folder, whether at the root of the Workspace drive or on a disk, will be available to load.
 
 Simply supply the name of the script, without an extension, and if it exists, the Lua interpreter will immediately parse it.

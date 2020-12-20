@@ -1,5 +1,3 @@
-# DrawPixels()
-
 The `DrawPixels()` API allows you to push raw pixel data directly to the display. While `DrawPixels()` is used under the hood by all of the drawing APIs, you lose some performance by calling it directly, especially in Lua. Since this bypasses the sprite counter, there is no limit to the number of draw calls you can make to any of the sprite layers. While this may be advantageous in some situations, you also lose the built-in sprite pixel data caching and draw call limitation imposed by the `SpriteChip`.
 
 You can also use `DrawPixels()` to make changes to the tilemap cache layer. Since `DrawPixels()` doesn’t have a width or height restriction, you can use this API to draw irregularly shaped data directly to the tilemap cache without using any sprites. On the flip side, there is no way to use `DrawPixels()` on the tile layer, so using it will cancel the draw call. It is important to note that when you change a tile's sprite ID or color offset, the tilemap redraws it back to the cache, overwriting any pixel data that was previously there.

@@ -1,5 +1,3 @@
-# Making C# Games
-
 Let’s take a look at how you can use Pixel Vision OS and Visual Studio to make a PV8 game with C#. When it comes to making Pixel Vision 8 games in C#,  you will need to adopt a hybrid workflow. This tutorial assumes you are using Visual Studio on a PC. You can also follow the same steps on Visual Studio for the Mac or Jetbrain’s Rider. To get started, you’ll want to download a zip copy of the Github repo instead of cloning.
 
 ![image alt text](images/MakingCSharpGames_image_0.png)

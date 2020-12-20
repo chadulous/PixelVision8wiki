@@ -1,5 +1,3 @@
-# Exporting Songs
-
 The Music Tool offers an option to export individual patterns and songs as WAV files. You can do this by selecting the Export option from the drop-down menu. This feature is only available in Tune. 
 
 ![image alt text](images/ExportingSongs_image_0.png)

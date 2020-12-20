@@ -1,5 +1,3 @@
-# Flag()
-
 The `Flag()` API allows you to quickly access just the flag value of a tile. This is useful when trying to calculate collision on the tilemap. By default, you can call this method with just a `column `and `row `position to return the flag value at that tile. If you supply a new value, it will be overridden on the tile. Changing a tile's flag value does not force the tile to be redrawn to the tilemap cache. Flags can be set in Pixel Vision OS’s Tilemap Tool or manually at run-time.
 
 ![image alt text](images/Flag_image_0.png)

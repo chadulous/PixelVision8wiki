@@ -1,5 +1,3 @@
-# Exporting Games
-
 Pixel Vision 8 allows you to export the game’s you built in two ways. You can create a `.pv8` disk to share with other PV8 users or create a standalone executable for Windows, Mac, and Linux if you have the Pro Tools installed.
 
 ![image alt text](images/ExportingGames_image_0.png)

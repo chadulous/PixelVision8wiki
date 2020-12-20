@@ -1,5 +1,3 @@
-# CalculateIndex()
-
 Converts an `X` and `Y` position into an index value. This is useful for finding positions in 1D arrays that represent 2D data.
 
 ## Usage

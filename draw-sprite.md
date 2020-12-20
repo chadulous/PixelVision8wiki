@@ -1,5 +1,3 @@
-# DrawSprite()
-
 The `DrawSprite()` API allows you to draw a single sprite to the display. Sprites represent individual collections of 8 x 8 blocks of pixel data. Each sprite is cached by the `SpriteChip `making sprite draw requests very fast. The display also has a limitation on how many sprites that can be on the screen at the same time. Each time you call `DrawSprite()`, the sprite counts against the total amount the display can render. If you attempt to draw more sprites than the display can handle, the call is ignored. One thing to keep in mind when drawing sprites is that their `X` and `Y` positions wrap if they reach the right or bottom border of the screen. You can use the display’s overscan to hide sprites offscreen until they are needed.
 
 Using the `DrawSprite()` API also allows you to flip the pixel data horizontally or vertically as well as change the color ID values. To conserve the `SpriteChip`’s memory, you can use these three pre-render flags to optimize your sprites.

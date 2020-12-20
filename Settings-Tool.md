@@ -1,5 +1,3 @@
-# Settings Tool
-
 The System Setting Tool allows you to configure the global settings of Pixel Vision OS in one place. The Settings Tool is available from the Workspace Explorer’s drop-down menu.
 
 ![image alt text](images/SettingsTool_image_0.png)

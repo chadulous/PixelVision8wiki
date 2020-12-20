@@ -1,5 +1,3 @@
-# The Chip Tool
-
 Under the hood, the Pixel Vision 8 engine is broken down into several "chips" that control how the engine behaves. The Chip Editor allows you to make changes to each of these chips and define the system limitations for each game.  After opening the `data.json` file, you’ll be presented with a graphical representation of the system’s chips.
 
 ![image alt text](images/TheChipEditorTool_image_0.png)

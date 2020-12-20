@@ -1,5 +1,3 @@
-# Pixel Vision 8
-
 Pixel Vision 8's core philosophy is to teach retro game development with streamlined workflows. PV8 is also a platform that standardizes 8-bit fantasy console limitations built on top of the open-source C# game engine based on MonoGame. This engine simply provides a standard set of APIs to create authentic-looking 8-bit games with modern programming languages and workflows. It also allows you to define specific limitations that alter the following properties:
 
 * Memory and game size

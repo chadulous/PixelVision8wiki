@@ -1,5 +1,3 @@
-# Font Tool
-
 The Font Tool, which is installed as part of the Pro Tools, allows you to view and modify Pixel Vision 8 sprite fonts.
 
 ## Layout

@@ -1,5 +1,3 @@
-# Clamp()
-
 The `Clamp()` API limits a value between a minimum and maximum integer.
 
 ## Usage

@@ -1,5 +1,3 @@
-# Screen Capture
-
 Pixel Vision 8 has two ways to capture the screen and save it to your computer. You can take a static screenshot or an animated gif.
 
 ## Screenshot

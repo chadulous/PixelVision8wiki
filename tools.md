@@ -1,5 +1,3 @@
-# Tools
-
 Pixel Vision 8 games are designed to run on top of Pixel Vision SDK. This open source SDK is written in C# but also supports Lua for making games. While you could easily build PV8 games natively, the Pixel Vision 8 and Pixel Vision OS streamlines this process. It also provides a standard file format, loading mechanism, and asset pipeline.
 
 Understanding how to code PV8 games in Lua allows you to create games from scratch and share them with others.

@@ -1,5 +1,3 @@
-# Palettes
-
 Pixel Vision 8 doesn’t have a built-in palette mode. Instead, there is an ability to shift the color ID of a sprite by an offset value before it is drawn to the display. 
 
 ## Using Color Offset

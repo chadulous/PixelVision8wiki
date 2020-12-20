@@ -1,5 +1,3 @@
-# AddScript
-
 The `AddScript()` API allows you to add a new Lua script at runtime from a string. This could be useful for dynamically generating code such as level data or other custom Lua objects from strings or text files. Simply give the script a name and pass in a string with valid Lua code. If a script with the same name exists, it will be overwritten. Make sure to call `LoadScript()` after to parse it.
 
 

@@ -1,5 +1,3 @@
-# PlaySong()
-
 The `PlaySong()` API allows you to activate the `MusicChip`’s tracker to playback any of the songs stored in memory. A song is simply a collection of patterns. You can supply an optional parameter called `startAt` to tell the `MusicChip` which pattern to start the song at. When playing a song, you will need to supply a song ID, which starts at `0`. The total number of songs is defined in the `data.json` file.
 
 ## Usage

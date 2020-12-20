@@ -1,5 +1,3 @@
-# MousePosition()
-
 The `MousePosition()` API returns a Point for the mouse cursor's `X` and `Y` position. The mouse's `0`,`0` position is in the upper left-hand corner of the display and when the mouse is off-screen it will return `-1`. This value is read-only. 
 
 ## Usage

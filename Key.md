@@ -1,5 +1,3 @@
-# Key()
-
 While the main forms of input for Pixel Vision 8 are the controllers, you can test for keyboard input by calling the `Key()` API. When this API is called, it returns the current state of that specific key. The method accepts the `Keys` enum, or an `int`, for a specific key. In addition, you need to provide the input state to check for. The `InputState `enum has two states, `Down` and `Released`. By default, `Down` is automatically used which returns `true` when the key is being pressed in the current frame. When using `Released`, the API returns `true `only when the key was `Down `in the last frame and `Up `in the current frame.
 
 ## Usage

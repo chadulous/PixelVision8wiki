@@ -1,5 +1,3 @@
-# CalculateDistance()
-
 A fast way to calculate the distance between two points.
 
 ## Usage

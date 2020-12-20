@@ -1,5 +1,3 @@
-# DrawSpriteBlock()
-
 The `DrawSpriteBlock()` API allows you to draw multiple sprites to the screen in a single call. This works similar to `DrawSprite(),` except you define the first sprite (upper left corner) then the `width `and `height `(in sprites) to sample from `SpriteChip`’s memory. For example, if you passed in an ID of 0 which is the first sprite, then a  `width `and `height `of `2` the `DrawSpriteBlock()` API would combine all 4 sprites into a single draw call.
 
 ![image alt text](images/DrawSpriteBlock_image_0.png)

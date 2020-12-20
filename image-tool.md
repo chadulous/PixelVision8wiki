@@ -1,5 +1,3 @@
-# Image Tool
-
 Pixel Vision OS has a built-in image viewer. You can use it to open any `.png` file that is not associated with an editor. You can tell a file will be opened by the Image Tool if it has the generic PNG icon. 
 
 ![image alt text](images/ImagePreviewTool_image_0.png)

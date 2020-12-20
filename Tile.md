@@ -1,5 +1,3 @@
-# Tile()
-
 The `Tile()` API allows you to get the current sprite, color offset and flag values associated with a given tile ID. You can optionally supply your own values if you want to update the tile. Changing a tile's sprite ID or color offset will force the tilemap to redraw the layer cache on the next frame. If you are drawing raw pixel data into the tilemap cache in the same position, it will be overwritten with the new tile's pixel data.
 
 ## Usage

@@ -1,5 +1,3 @@
-# Button()
-
 The main form of input for Pixel Vision 8 is the controller's buttons. You can get the current state of any button by calling the `Button()` method and supplying a button ID. There are optional parameters for specifying an `InputState` and the controller ID. When called, the `Button()` method returns a `bool` for the requested button and its state. 
 
 The `InputState `enum contains options for testing the `Down `and `Released `states of the supplied button ID. By default, `Down `is automatically used which returns `true `when the key was pressed in the current frame. When using `Released`, the method returns `true `if the key is currently up but was down in the last frame.

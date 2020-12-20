@@ -1,5 +1,3 @@
-# The Workspace
-
 Pixel Vision OS displays a special drive on your desktop called Workspace. This drive is automatically created as a folder on your computer’s filesystem.
 
 ![image alt text](images/TheWorkspace_image_0.png)

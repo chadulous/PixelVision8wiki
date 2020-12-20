@@ -1,5 +1,3 @@
-# BackgroundColor()
-
 The background color is used to fill the screen when clearing the display. You can use this method to read or update the background color at runtime. When calling `BackgroundColor()` without an argument, it returns the current background color as an `int`. You can pass in an optional `int `to update the background color by calling `BackgroundColor(0),` where `0` is any valid system color ID.
 
 Passing in a value such as `-1`, or one that is out of range will default to the first system color unless the `ColorChip`’s` debugColor` property is set to true. In debug color mode, any out of bounds color IDs will display Magenta (`#ff00ff`), which is the engine's default transparent color.

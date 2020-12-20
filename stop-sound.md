@@ -1,5 +1,3 @@
-# StopSound()
-
 Use `StopSound()` to stop any sound playing on a specific channel.
 
 ## Usage

@@ -1,5 +1,3 @@
-# StopSong()
-
 The `StopSong()` API will stop the currently playing song from the `MusicChip`.
 
 ## Usage
