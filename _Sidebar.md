@@ -30,10 +30,10 @@
 * [Tilemap Tool](tilemap-tool)
 
 ## Exporting
-* [Games](games)
-* [Songs](songs)
-* [Sounds](sounds)
-* [Tilemaps](tilemaps)
+* [Games](exporting-games)
+* [Songs](exporting-songs)
+* [Sounds](exporting-sounds)
+* [Tilemaps](exporting-tilemaps)
 
 ## Concepts
 * [Colors](colors)
