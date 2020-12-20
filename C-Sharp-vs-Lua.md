@@ -1,3 +1,5 @@
+# C# vs Lua
+
 The API documentation was designed to be used for creating C# or Lua games. If you are not familiar with one of the languages, this document contains some helpful hints when reading the documentation. 
 
 ## Data Structures
@@ -6,45 +8,13 @@ For the most part, C# and Lua share the same data structures such as string, int
 
 In the documentation, you may see some of the following types. This chart will help you understand how Pixel Vision 8’s Lua interpreter converts them under the hood.
 
-<table>
-  <tr>
-    <td>Type</td>
-    <td>C#</td>
-    <td>Lua</td>
-    <td>Description</td>
-  </tr>
-  <tr>
-    <td>int[]</td>
-    <td>Array of integers</td>
-    <td>Array (table) of integers </td>
-    <td>This is commonly used when working with pixel data. PV8 uses 1D integer arrays to represent sprite pixel data.</td>
-  </tr>
-  <tr>
-    <td>string[]</td>
-    <td>Array of strings</td>
-    <td>Array (table) of strings</td>
-    <td>This is commonly used in text manipulation.</td>
-  </tr>
-  <tr>
-    <td>Dictionary</td>
-    <td>Dictionary</td>
-    <td>Table</td>
-    <td>Both data structures use strings for keys. In C# the value will be of a fixed type whereas Lua allows for mixing and matching types for each key’s value.</td>
-  </tr>
-  <tr>
-    <td>Point</td>
-    <td>Point</td>
-    <td>Point</td>
-    <td>While you can use the C# Point class in Lua, you will need to call CreatePoint() to get a new instance. The same API works in C# but you can use new Point() as well.</td>
-  </tr>
-  <tr>
-    <td>Rect</td>
-    <td>Rectangle</td>
-    <td>Rect</td>
-    <td>Similar to the Point class in Lua, you will need to call CreateRect() to get a new instance. The same API works in C# but you can use new Rectangle() as well.</td>
-  </tr>
-</table>
-
+| Type       | C\#               | Lua                          | Description                                                                                                                                                                   |
+|------------|-------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| int\[\]    | Array of integers | Array \(table\) of integers  | This is commonly used when working with pixel data\. PV8 uses 1D integer arrays to represent sprite pixel data\.                                                              |
+| string\[\] | Array of strings  | Array \(table\) of strings   | This is commonly used in text manipulation\.                                                                                                                                  |
+| Dictionary | Dictionary        | Table                        | Both data structures use strings for keys\. In C\# the value will be of a fixed type whereas Lua allows for mixing and matching types for each key’s value\.                  |
+| Point      | Point             | Point                        | While you can use the C\# Point class in Lua, you will need to call CreatePoint\(\) to get a new instance\. The same API works in C\# but you can use new Point\(\) as well\. |
+| Rect       | Rectangle         | Rect                         | Similar to the Point class in Lua, you will need to call CreateRect\(\) to get a new instance\. The same API works in C\# but you can use new Rectangle\(\) as well\.         |
 
 ## Numbers
 
@@ -108,4 +78,4 @@ Here are a few pointers to help when it comes to porting from Lua to C# or vise 
 
  
 
-
+

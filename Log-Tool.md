@@ -1,3 +1,5 @@
+# Log Tool
+
 Pixel Vision OS includes a basic tool for viewing Pixel Vision 8’s log file. This file is maintained and updated while Pixel Vision 8 is running. 
 
 ![image alt text](images/LogTool_image_0.png)
@@ -16,26 +18,12 @@ One thing to keep in mind, however, is that Pixel Vision 8 automatically destroy
 
 The `log.txt` file is located in one of the following locations based on the OS you are running Pixel Vision 8 on.
 
-<table>
-  <tr>
-    <td>Version</td>
-    <td>Path</td>
-  </tr>
-  <tr>
-    <td>Windows</td>
-    <td>C:\Users\UserName\AppData\Local\PixelVision8\Tmp\Trash\</td>
-  </tr>
-  <tr>
-    <td>MacOS</td>
-    <td>/Users/UserName/.local/share/PixelVision8/Tmp/Trash/</td>
-  </tr>
-  <tr>
-    <td>Linux</td>
-    <td>/Users/UserName/.local/share/PixelVision8/Tmp/Trash/</td>
-  </tr>
-</table>
-
+| Version | Path                                                            |
+|---------|-----------------------------------------------------------------|
+| Windows | C:\\Users\\UserName\\AppData\\Local\\PixelVision8\\Tmp\\Trash\\ |
+| MacOS   | /Users/UserName/\.local/share/PixelVision8/Tmp/Trash/           |
+| Linux   | /Users/UserName/\.local/share/PixelVision8/Tmp/Trash/           |
 
 If you would like to view the log while running Pixel Vision 8, you can open it from the termnial window or use a text editor that automatically refreshes files after external changes are detected.
 
-
+
