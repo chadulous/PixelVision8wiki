@@ -1,6 +1,6 @@
 
 ## Getting Started
-    * [Introduction](introduction)
+    * [Introduction](introduction.md)
     * [Change Log](change-log)
     * [Quick Start](quick-start)
     * [Credits](credits)
