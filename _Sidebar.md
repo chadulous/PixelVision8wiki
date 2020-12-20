@@ -1,9 +1,9 @@
 
 ## Getting Started
-    * [Introduction](introduction.md)
-    * [Change Log](change-log)
-    * [Quick Start](quick-start)
-    * [Credits](credits)
+* [Introduction](introduction.md)
+* [Change Log](change-log)
+* [Quick Start](quick-start)
+* [Credits](credits)
 
 ## Making Games
     * [Workspace](workspace)
