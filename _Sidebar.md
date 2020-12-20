@@ -14,8 +14,8 @@
 ## Coding
 * [API Cheat Sheet](api-cheat-sheet)
 * [Enums](enums)
-* [C# Sharp Vs Lua](c-sharp-vs-lua)
-* [C# Sharp Games](c-sharp-games)
+* [C# Sharp Vs Lua](C%23-vs-Lua)
+* [C# Sharp Games](C%23-games)
 
 ## Tools
 * [Tilemap Tool](tilemap-tool)
