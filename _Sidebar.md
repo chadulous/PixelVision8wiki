@@ -48,7 +48,7 @@
 * [Tilemaps](tilemaps)
 
 ## API
-* [AddScript](add-script)
+* [AddScript](AddScript())
 * [BackgroundColor](background-color)
 * [Button](button)
 * [CalculateDistance](calculate-distance)
