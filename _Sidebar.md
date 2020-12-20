@@ -7,13 +7,15 @@
 
 ## Making Games
 * [Workspace](workspace)
+* [Game Project](game-project)
 * [Tools](tools)
 * [Screen Capture](screen-capture)
-* [Game Project](game-project)
-* [C# Sharp Vs Lua](c-sharp-vs-lua)
-* [C# Sharp Games](c-sharp-games)
+
+## Coding
 * [API Cheat Sheet](api-cheat-sheet)
 * [Enums](enums)
+* [C# Sharp Vs Lua](c-sharp-vs-lua)
+* [C# Sharp Games](c-sharp-games)
 
 ## Tools
 * [Tilemap Tool](tilemap-tool)
